@@ -31,21 +31,19 @@ h2 {
     height: 10vh;
 }
 
-
-
-
 /* Header */
 
 .header {
-    position: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.illustration {
-    height: 20vh;
+.header img{
+    height: 6rem;
+    width: 23rem;
 }
 
 /* Section presentation */
