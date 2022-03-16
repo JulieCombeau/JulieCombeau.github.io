@@ -64,6 +64,10 @@ h2 {
     width: 100vw;
     height: 100vh;
 }
+.scrum-title {
+    display: flex;
+    text-align: center;
+}
 
 .methods-blocks {
     display: flex;
@@ -76,29 +80,32 @@ h2 {
     display: flex;
     background-color: grey;
     height: 800px;
-    width: 40%;
+    width: 40vh;
+    justify-content: center;
 }
 .wild-method {
     display: flex; 
     background-color: grey;
     height: 800px;
-    width: 40%;
+    width: 40vh;
+    justify-content: center;
 }
 .scrum-items {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+   
 }
 
 .firstavoir {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: aqua;
 }
 
 .secondavoir {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: aqua;
 }
 
@@ -107,17 +114,19 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
+    
 }
 
 .daily {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: aqua;
 }
 
 .retro {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: aqua;
 }
 
