@@ -72,6 +72,14 @@ h2 {
     height: 100vh;
 }
 
+div {
+    width : calc(100% - 2rem);
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
 /* Section fun */
 
 .fun {
