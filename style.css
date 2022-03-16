@@ -21,25 +21,29 @@ h2 {
 
 /* navigation  */
 
-.bar-nav.nav{
+.bar-nav nav{
     position: fixed;
     width: 10vw;
     height: 10vh;
 }
 
+.bar-nav .logo {
+    height: 10vh;
+}
 
 /* Header */
 
 .header {
-    position: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.illustration {
-    height: 20vh;
+.header img{
+    height: 6rem;
+    width: 23rem;
 }
 
 /* Section presentation */
@@ -56,6 +60,51 @@ h2 {
 .organisation {
     width: 100vw;
     height: 100vh;
+    border: 2px solid green;
+}
+
+/* Grid display page "Organisation" */
+
+.organisation-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 1px solid black;
+}
+
+.organisation-container > article {
+   
+    margin: 10px;
+    border: 3xp solid red;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;
+    background-color:aqua
+}
+
+.organisation-block1 {
+    grid-column: 1 / 2;
+    border: 3xp solid red;
+}
+.organisation-block2 {
+    grid-column: 2 / 5;
+}
+.organisation-block3 {
+    grid-column: 1 / 4;
+}
+.organisation-block4 {
+    grid-column: 4 / 5;
+}
+.organisation-block5 {
+    grid-column: 1 / 2;
+}
+.organisation-block6 {
+    grid-column: 2 / 5;
+}
+.organisation-block7 {
+    grid-column: 1 / 4;
+}
+.organisation-block8 {
+    grid-column: 4 / 5; 
 }
 
 /* Section methodology */
@@ -148,6 +197,27 @@ div > ul:nth-child(4){
 
 /* Section footer */
 .footer {
+    display: flex;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    gap: 0.5rem;
+}
+.container-footer img {
+    width: 20vh;
+}
+.container-footer p {
+    font-size: 1rem;
+}
+.container-footer p:first-of-type{
+    margin-top: 2rem;
 }
