@@ -21,11 +21,17 @@ h2 {
 
 /* navigation  */
 
-.bar-nav.nav{
+.bar-nav nav{
     position: fixed;
     width: 10vw;
     height: 10vh;
 }
+
+.bar-nav .logo {
+    height: 10vh;
+}
+
+
 
 
 /* Header */
