@@ -88,7 +88,14 @@ h2 {
 }
 
 .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90vw;
     height: 90vh;
-    background-color: lightgray;
+    gap: 0.5rem;
+}
+.container-footer img {
+    width: 20vh;
 }
