@@ -58,6 +58,50 @@ h2 {
     height: 100vh;
 }
 
+/* Grid display */
+
+.organisation-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+    border: 1px solid black;
+}
+
+article {
+   
+    margin: 10px;
+    border: 3xp solid red;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;
+    background-color:aqua
+}
+
+.block1 {
+    grid-column: 1 / 2;
+}
+.block2 {
+    grid-column: 2 / 5;
+}
+.block3 {
+    grid-column: 1 / 4;
+}
+.block4 {
+    grid-column: 4 / 5;
+}
+.block5 {
+    grid-column: 1 / 2;
+}
+.block6 {
+    grid-column: 2 / 5;
+}
+.block7 {
+    grid-column: 1 / 4;
+}
+.block8 {
+    grid-column: 4 / 5; 
+}
+
 /* Section methodology */
 
 .methodology {
