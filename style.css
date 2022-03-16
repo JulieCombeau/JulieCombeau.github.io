@@ -58,17 +58,16 @@ h2 {
     height: 100vh;
 }
 
-/* Grid display */
+/* Grid display page "Organisation" */
 
 .organisation-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    text-align: center;
     border: 1px solid black;
 }
 
-article {
+.organisation-container > article {
    
     margin: 10px;
     border: 3xp solid red;
@@ -79,6 +78,7 @@ article {
 
 .block1 {
     grid-column: 1 / 2;
+    border: 3xp solid red;
 }
 .block2 {
     grid-column: 2 / 5;
