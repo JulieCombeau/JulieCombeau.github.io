@@ -99,3 +99,9 @@ h2 {
 .container-footer img {
     width: 20vh;
 }
+.container-footer p {
+    font-size: 1rem;
+}
+.container-footer p:first-of-type{
+    margin-top: 2rem;
+}
