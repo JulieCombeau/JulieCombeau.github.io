@@ -86,12 +86,38 @@ div {
     grid-row: 3 / span 4 ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+    border-radius: 100%;
 }
 
 .items > li {
-    background-color: blue;
     grid-column: span 1;
 }
+
+.items > li:first-child {
+    transform: rotate(-45deg);
+    align-self: center;
+    text-align: center;
+}
+
+.items > li:nth-child(2) {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+}
+
+.items > li:nth-child(3) {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+}
+
+.items > li:last-child {
+    transform: rotate(-45deg);
+    align-self: center;
+    text-align: center;
+}
+
 
 /* Section fun */
 
