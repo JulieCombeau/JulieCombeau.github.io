@@ -80,6 +80,19 @@ div {
     grid-template-rows: repeat(8, 1fr);
 }
 
+.items {
+    display: grid;
+    grid-column: 3 / span 4 ; 
+    grid-row: 3 / span 4 ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.items > li {
+    background-color: blue;
+    grid-column: span 1;
+}
+
 /* Section fun */
 
 .fun {
