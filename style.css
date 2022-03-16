@@ -65,6 +65,64 @@ h2 {
     height: 100vh;
 }
 
+.methods-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.scrum-method {
+    display: flex;
+    background-color: grey;
+    height: 800px;
+    width: 40%;
+}
+.wild-method {
+    display: flex; 
+    background-color: grey;
+    height: 800px;
+    width: 40%;
+}
+.scrum-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.firstavoir {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.secondavoir {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.wild-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.daily {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.retro {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+
+
 /* Section problematics */
 
 .problematics {
