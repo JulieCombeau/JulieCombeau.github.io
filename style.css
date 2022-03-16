@@ -70,14 +70,17 @@ h2 {
 .problematics {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 div {
-    width : calc(100% - 2rem);
-    height: 75%;
+    width : 100%;
+    height: 50%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    
 }
 
 .items {
