@@ -46,14 +46,14 @@ h2 {
     width: 23rem;
 }
 
-/* Section presentation 
+/* Section presentation */
 
 .presentation {
     width: 100vw;
     height: 100vh;
 }
 
-*/
+
 
 /* Section organisation */
 
@@ -203,7 +203,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    
 }
 
 .description {
