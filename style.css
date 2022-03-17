@@ -112,7 +112,77 @@ h2 {
 .methodology {
     width: 100vw;
     height: 100vh;
+    background-color: blueviolet;
+    margin-bottom: 128px;
 }
+.scrum-title {
+    display: flex;
+    text-align: center;
+}
+
+.methods-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.scrum-method {
+    display: flex;
+    background-color: grey;
+    height: 800px;
+    width: 40vh;
+    justify-content: center;
+   
+}
+.wild-method {
+    display: flex; 
+    background-color: grey;
+    height: 800px;
+    width: 40vh;
+    justify-content: center;
+}
+.scrum-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.firstavoir {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.secondavoir {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.wild-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.daily {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.retro {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+
 
 /* Section problematics */
 
