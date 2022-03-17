@@ -22,19 +22,25 @@ h2 {
 /* navigation  */
 
 .navbar {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background: rgba(167, 191, 202, 0.37);
+    background: rgba(114, 132, 141, 0.808);
     height: 100vh;
+    width: 100vw;
+    z-index: 1;
 }
 .navbar__links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60vh;
+    height: 70vh;
+    width: 100vw;
     align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2rem;
 }
 .show-nav {
     display: none;
@@ -46,13 +52,14 @@ h2 {
 
 .burger {
     display: block;
-    position: relative;
+    position: absolute;
     padding: 0;
     width: 45px;
     height: 45px;
     border: none;
     background: transparent;
     cursor: pointer;
+    z-index: 99;
 }
 .bar {
     display: block;
