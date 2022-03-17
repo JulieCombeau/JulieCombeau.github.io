@@ -74,6 +74,7 @@ section.presentation>h3 {
     margin: 20px 10px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 /* Section organisation */
