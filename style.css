@@ -66,6 +66,7 @@ h2 {
 /* Grid display page "Organisation" */
 
 .organisation-container {
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -73,8 +74,7 @@ h2 {
 }
 
 .organisation-container > article {
-   
-    height: 80vh;
+      
     margin: 10px;
     border: 3px solid red;
     box-shadow: black 0px 3px 8px;
