@@ -21,6 +21,61 @@ h2 {
 
 /* navigation  */
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(167, 191, 202, 0.37);
+    height: 100vh;
+}
+.navbar__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    align-items: center;
+}
+.show-nav {
+    display: none;
+    width: 100%;
+}
+.navbar__links {
+    padding:0 10px;
+}
+
+.burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: white;
+    border-radius: 3px;
+}
+.bar::before, .bar::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: white;
+    border-radius: 3px;
+}
+.bar::before{
+    transform: translateY(-12px);
+}
+.bar::after{
+    transform: translateY(12px);
+}
 .bar-nav nav{
     position: fixed;
     width: 10vw;
