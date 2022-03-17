@@ -53,7 +53,20 @@ h2 {
     height: 100vh;
 }
 
+.trainers {
+    display: flex;
+    justify-content: space-between;
+}
 
+.crew {
+    display: flex;
+    justify-content: space-between;
+}
+
+.karma-members {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Section organisation */
 
@@ -191,7 +204,7 @@ h2 {
     height: 100vh;
 }
 
-div {
+.problematics > div {
     width : calc(100% - 2rem);
     height: 75%;
     display: grid;
