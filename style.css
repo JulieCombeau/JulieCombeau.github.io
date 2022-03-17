@@ -46,14 +46,14 @@ h2 {
     width: 23rem;
 }
 
-/* Section presentation */
+/* Section presentation 
 
 .presentation {
     width: 100vw;
     height: 100vh;
 }
 
-
+*/
 
 /* Section organisation */
 
@@ -222,37 +222,61 @@ h2 {
     grid-row: 3 / span 4 ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 100%;
     background-color: rgb(230, 204, 178) ;
 }
 
 .items > li {
     grid-column: span 1;
+    display: flex;
 }
 
 .items > li:first-child {
-    transform: rotate(-45deg);
-    align-self: center;
-    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
-
 .items > li:nth-child(2) {
-    transform: rotate(45deg);
-    align-self: center;
-    text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .items > li:nth-child(3) {
-    transform: rotate(45deg);
-    align-self: center;
-    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.items > li:last-child {
+.items > li:last-child  {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.items > li:first-child > p {
     transform: rotate(-45deg);
     align-self: center;
     text-align: center;
+    flex-grow: 1;
+}
+
+.items > li:nth-child(2) > p {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.items > li:nth-child(3) > p {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.items > li:last-child > p {
+    transform: rotate(-45deg);
+    align-self: center;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .problematics > div > ul:first-child{
