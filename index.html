@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
+      <!-- Imbrication H1 img à valider -->
+      <h1>
+        <img
+          class="illustration"
+          src="/assets/images/logo.png"
+          alt=""
+          srcset=""
+        />
+      </h1>
 
         <!-- Imbrication H1 img à valider -->
         <h1><img class="illustration" src="/assets/images/logo.png" alt="" srcset=""></h1> 
 
-        <div class='bar-nav'>
+        <!-- <div class='bar-nav'>
             <img class="logo" src="/assets/images/illustration.png" alt="" srcset="">
             <nav class="nav">
                 <ul>
@@ -23,13 +32,70 @@
                     <li>dsfds</li>
                     <li>sdfsdf</li>
                     <li>dfsdf</li>
-                </ul>
+                </ul> 
             </nav>
-        </div>
+        </div>-->
     </header>
     <main>
         <section class="presentation">
-            <h2>presentation</h2>
+            <h2>Presentation</h2>
+            <h3>The trainers's team</h3>
+            <div class="trainers">
+                <ul>
+                    <li>
+                        <img src="/assets/images/Anthony.png" alt="avatar Anthony">
+                        <p>Anthony</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/JFrancois.png" alt="avatar Jean Francois">
+                        <p>Jean-François</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/Loris.png" alt="avatar Loris">
+                        <p>Loris</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/Julien.png" alt="avatar Julien">
+                        <p>Julien</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/Guilhem.png" alt="avatar Guilhem">
+                        <p>Guilhem</p>
+                    </li>
+                </ul>
+            </div>
+            <h3>The Karma team</h3>
+            <div class="crew">
+                <ul>
+                    <li>Square crew</li>
+                    <li>Circle crew</li>
+                    <li>Triangle crew</li>
+                </ul>
+            </div>
+            <div class="karma-members">
+                <ul>
+                   <li>
+                       <img src="/assets/images/Frederique.png" alt="avatar Frederique">
+                       <p>Frédérique</p>
+                   </li>
+                   <li>
+                        <img src="/assets/images/Marc.png" alt="avatar Marc">
+                        <p>Frédérique</p>
+                    </li>
+                     <li>
+                        <img src="/assets/images/Julie.png" alt="avatar Julie">
+                        <p>Frédérique</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/Robin.png" alt="avatar Robin">
+                        <p>Frédérique</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/Clemence.png" alt="avatar Clemence">
+                        <p>Frédérique</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="organisation">
             <h2>organisation</h2>
@@ -45,21 +111,87 @@
                      
             </div>
         </section>
-        <section class="methodology">
-            <h2>methodology</h2>
-            <p></p>
-        </section>
+      <section class="methodology">
+        <h2>methodology</h2>
+        <article class="methods-blocks">
+          <div class="scrum-method">
+            <h4 class="scrum-title">Scrum Method</h4>
+            <!-- remplacer les <p> par des <h> ? -->
+            <div class="scrum-items">
+              <p class="firstavoir">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae quasi, ab pariatur, cupiditate rem at ipsum nesciunt
+                recusandae consectetur vitae commodi soluta eos aspernatur
+                ratione assumenda voluptatum eligendi est vero? Veniam explicabo
+                ipsum consectetur soluta iure in temporibus sapiente
+              </p>
+              <p class="secondavoir">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae quasi, ab pariatur, cupiditate rem at ipsum nesciunt
+                recusandae consectetur vitae commodi soluta eos aspernatur
+                ratione assumenda voluptatum eligendi est vero? Veniam explicabo
+                ipsum consectetur soluta iure in temporibus sapiente
+              </p>
+            </div>
+          </div>
+          <div class="wild-method">
+            <h4>Wild Method</h4>
+            <div class="wild-items">
+              <p class="daily">Daily 9h00 - 9h30</p>
+              <p class="retro">Retro Vendredi aprem</p>
+            </div>
+          </div>
+        </article>
+      </section>
         <section class="problematics">
-            <h2>problematics</h2>
+            <h2>Problematics</h2>
+            <!-- Add div for general grid -->
+            <div>
+                <!-- Add four ul with li for decription of problematics -->
+                <ul class = "description">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+                <ul class = "description">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+                <ul class = "description">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+                <ul class = "description">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+                <!-- Add one ul li for name of items -->
+                <ul class = "items"> 
+                    <li>Language choice</li>
+                    <li>Doubt</li>
+                    <li>Professional future</li>
+                    <li>A définir</li>
+                </ul>
+            </div>
         </section>
         <section class="fun">
             <h2>fun</h2>
         </section>
     </main>
     <footer class="footer">
-
+        <div class="container-footer">
+            <img src="/assets/images/wcs-logo.png" alt="Logo Wild Code School" srcset="">
+            <img src="/assets/images/css3-logo.png" alt="Logo Css3" srcset="">
+            <img src="/assets/images/html5-logo.png" alt="Logo Html5" srcset="">
+            <img src="/assets/images/js-logo.png" alt="Logo Javascript" srcset="">
+            <img src="/assets/images/git-logo.png" alt="Logo Github" srcset="">
+            <p>Coded with love by the Circle team :</p>
+            <p>Clémence, Julie, Frédérique, Robin and Marc</p>
+        </div>
     </footer>
-    
     <script src="/index.js"></script>
-</body>
+  </body>
 </html>

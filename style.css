@@ -21,25 +21,29 @@ h2 {
 
 /* navigation  */
 
-.bar-nav.nav{
+.bar-nav nav{
     position: fixed;
     width: 10vw;
     height: 10vh;
 }
 
+.bar-nav .logo {
+    height: 10vh;
+}
 
 /* Header */
 
 .header {
-    position: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.illustration {
-    height: 20vh;
+.header img{
+    height: 6rem;
+    width: 23rem;
 }
 
 /* Section presentation */
@@ -109,13 +113,150 @@ h2 {
 .methodology {
     width: 100vw;
     height: 100vh;
+    background-color: blueviolet;
+    margin-bottom: 128px;
 }
+.scrum-title {
+    display: flex;
+    text-align: center;
+}
+
+.methods-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.scrum-method {
+    display: flex;
+    background-color: grey;
+    height: 800px;
+    width: 40vh;
+    justify-content: center;
+   
+}
+.wild-method {
+    display: flex; 
+    background-color: grey;
+    height: 800px;
+    width: 40vh;
+    justify-content: center;
+}
+.scrum-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.firstavoir {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.secondavoir {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.wild-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.daily {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.retro {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+
 
 /* Section problematics */
 
 .problematics {
     width: 100vw;
     height: 100vh;
+}
+
+div {
+    width : calc(100% - 2rem);
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.items {
+    display: grid;
+    grid-column: 3 / span 4 ; 
+    grid-row: 3 / span 4 ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: rgb(230, 204, 178) ;
+}
+
+.items > li {
+    grid-column: span 1;
+}
+
+.items > li:first-child {
+    transform: rotate(-45deg);
+    align-self: center;
+    text-align: center;
+}
+
+.items > li:nth-child(2) {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+}
+
+.items > li:nth-child(3) {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+}
+
+.items > li:last-child {
+    transform: rotate(-45deg);
+    align-self: center;
+    text-align: center;
+}
+
+div > ul:first-child{
+    grid-column: 1 / span 2 ; 
+    grid-row: 1 / span 2 ;
+}
+
+div > ul:nth-child(2){
+    grid-column: 7 / span 2 ; 
+    grid-row: 1 / span 2 ;
+}
+
+div > ul:nth-child(3){
+    grid-column: 1 / span 2 ; 
+    grid-row: 7 / span 2 ;
+}
+
+div > ul:nth-child(4){
+    grid-column: 7 / span 2 ; 
+    grid-row: 7 / span 2 ;
 }
 
 /* Section fun */
@@ -127,6 +268,27 @@ h2 {
 
 /* Section footer */
 .footer {
+    display: flex;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    gap: 0.5rem;
+}
+.container-footer img {
+    width: 20vh;
+}
+.container-footer p {
+    font-size: 1rem;
+}
+.container-footer p:first-of-type{
+    margin-top: 2rem;
 }
