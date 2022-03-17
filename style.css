@@ -131,9 +131,11 @@ h2 {
     /* flex-direction: row; */
     /* align-items: flex-start; */
     margin-bottom: 100px;
-    
+    }
 
-}
+.wild-title {
+    margin-bottom: 100px;
+}  
 .methodology-intro {
     width: 100vh;
     align-self: center;
@@ -160,11 +162,14 @@ h2 {
     
 }
 .wild-method {
-    display: flex; 
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    /* background-color: grey; */
+    border: solid black;
     height: 70vw;
-    width: 40vh;
+    width: 50vh;
     justify-content: center;
+    text-align: center;
 }
 .scrum-items {
     display: flex;
@@ -179,6 +184,9 @@ h2 {
     height: 25vw;
     width: 25vh;
     background-color: aqua;
+    font-size:3vw
+    overflow
+
 }
 
 .secondavoir {
@@ -190,23 +198,24 @@ h2 {
 .wild-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    
+    justify-content: space-between;
+    width: 50vh;
     
 }
 
 .daily {
-    height: 300px;
-    width: 300px;
+    height: 25vw;
+    width: 25vh;
     background-color: aqua;
 }
 
 .retro {
-    height: 300px;
-    width: 300px;
+    height: 25vw;
+    width: 25vh;
     background-color: aqua;
 }
+
 
 
 
