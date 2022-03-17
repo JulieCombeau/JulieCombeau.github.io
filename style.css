@@ -70,8 +70,9 @@ h2 {
 
 .organisation-container > article {
    
+    height: 35vw;
     margin: 10px;
-    border: 3xp solid red;
+    border: 3px solid red;
     box-shadow: black 0px 3px 8px;
     border-radius: 5px;
     background-color:aqua
