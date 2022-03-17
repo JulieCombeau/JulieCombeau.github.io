@@ -22,15 +22,19 @@ h2 {
 /* navigation  */
 
 .navbar {
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background: rgba(114, 132, 141, 0.808);
+    background: rgba(216, 183, 74, 0.808);
     height: 100vh;
     width: 100vw;
     z-index: 1;
+
+    /* For desktop version */
+    /* border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%; */
 }
 .navbar__links {
     display: flex;
@@ -42,6 +46,20 @@ h2 {
     font-family: 'Playfair Display SC', serif;
     font-size: 2rem;
 }
+
+li.navbar__links:hover,
+li.navbar__links:focus {
+    font-size:3rem;
+    background: linear-gradient(to top, #111111, #524a4f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar__links:hover,
+.navbar__links:focus {
+
+}
+
 .show-nav {
     display: none;
     width: 100%;
@@ -52,7 +70,7 @@ h2 {
 
 .burger {
     display: block;
-    position: absolute;
+    position: fixed;
     padding: 0;
     width: 45px;
     height: 45px;
@@ -65,16 +83,19 @@ h2 {
     display: block;
     width: 45px;
     height: 4px;
-    background: white;
+    background: black;
     border-radius: 3px;
+    margin-left: 90vw;
+    margin-top: 5vh;
 }
 .bar::before, .bar::after {
     content: "";
     width: 45px;
     height: 4px;
     position: absolute;
+    margin-left: 90vw;
     left: 0;
-    background: white;
+    background: black;
     border-radius: 3px;
 }
 .bar::before{
@@ -83,6 +104,7 @@ h2 {
 .bar::after{
     transform: translateY(12px);
 }
+
 .bar-nav nav{
     position: fixed;
     width: 10vw;
