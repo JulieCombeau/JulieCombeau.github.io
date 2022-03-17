@@ -53,6 +53,10 @@ h2 {
     height: 100vh;
 }
 
+section.presentation>h3 {
+    margin-top: 20px;
+}
+
 .trainers {
     display: flex;
     justify-content: space-between;
