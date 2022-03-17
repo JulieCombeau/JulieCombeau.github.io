@@ -115,6 +115,10 @@ h2 {
     background-color: blueviolet;
     margin-bottom: 128px;
 }
+.methodology-container {
+    width: 90vw;
+    height: 90vh;
+}
 .scrum-title {
     display: flex;
     text-align: center;
