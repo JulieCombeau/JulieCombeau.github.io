@@ -54,20 +54,24 @@ h2 {
 }
 
 section.presentation>h3 {
-    margin-top: 20px;
+    margin: 20px 0 20px 10px;
+   text-align: center;
 }
 
 .trainers {
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .crew {
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .karma-members {
+    margin: 20px 10px;
     display: flex;
     justify-content: space-between;
 }
