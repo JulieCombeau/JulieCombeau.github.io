@@ -115,13 +115,30 @@ h2 {
     background-color: blueviolet;
     margin-bottom: 128px;
 }
+.section-title {
+    align-self: center;
+}
 .methodology-container {
     width: 90vw;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 .scrum-title {
-    display: flex;
-    text-align: center;
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    margin-bottom: 100px;
+    
+
+}
+.methodology-intro {
+    width: 100vh;
+    align-self: center;
+    border: solid black
+
 }
 
 .methods-blocks {
@@ -133,35 +150,40 @@ h2 {
 
 .scrum-method {
     display: flex;
-    background-color: grey;
-    height: 800px;
-    width: 40vh;
+    flex-direction: column;
+    /* background-color: grey; */
+    border: solid black;
+    height: 70vw;
+    width: 50vh;
     justify-content: center;
-   
+    text-align: center;
+    
 }
 .wild-method {
     display: flex; 
     background-color: grey;
-    height: 800px;
+    height: 70vw;
     width: 40vh;
     justify-content: center;
 }
 .scrum-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vh;
    
 }
 
 .firstavoir {
-    height: 300px;
-    width: 300px;
+    height: 25vw;
+    width: 25vh;
     background-color: aqua;
 }
 
 .secondavoir {
-    height: 300px;
-    width: 300px;
+    height: 25vw;
+    width: 25vh;
     background-color: aqua;
 }
 
