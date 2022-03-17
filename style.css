@@ -53,7 +53,29 @@ h2 {
     height: 100vh;
 }
 
+section.presentation>h3 {
+    margin: 20px 0 20px 10px;
+   text-align: center;
+}
 
+.trainers {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crew {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.karma-members {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
 /* Section organisation */
 
@@ -191,7 +213,7 @@ h2 {
     height: 100vh;
 }
 
-div {
+.problematics > div {
     width : calc(100% - 2rem);
     height: 75%;
     display: grid;
