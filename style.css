@@ -137,19 +137,25 @@ li.navbar__links:focus {
     height: 100vh;
 }
 
-section.presentation>h3 {
-    margin: 20px 0 20px 10px;
-   text-align: center;
+img.karma-members {
+    height: 6.25rem;
 }
 
 img.avatar {
     height: 6.25rem;
 }
 
+section.presentation>h3 {
+    margin: 25px 0 25px 10px;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 130%;
+}
+
 .trainers {
     margin: 0 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .card {
