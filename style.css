@@ -214,10 +214,10 @@ section.presentation>h3 {
 .organisation-container > article {
       
     margin: 10px;
-    border: 3px solid red;
+    border: 2px solid black;
     box-shadow: black 0px 3px 8px;
     border-radius: 5px;
-    background-color:aqua
+    /* background-color:aqua */
 }
 
 .organisation-block1 {
@@ -263,9 +263,10 @@ section.presentation>h3 {
 .methodology {
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin-bottom: 128px;
     display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -346,13 +347,13 @@ section.presentation>h3 {
 }
 
 .firstavoir {
-    background-color: aqua;
+    /* background-color: aqua; */
     font-size:3vw;
     flex-wrap: wrap;
 }
 
 .secondavoir {
-    background-color: aqua;
+    /* background-color: aqua; */
     flex-wrap: wrap;
 }
 
