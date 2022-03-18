@@ -135,21 +135,29 @@ li.navbar__links:focus {
 .presentation {
     width: 100vw;
     height: 100vh;
+    margin-left: 0.2em;
 }
 
-section.presentation>h3 {
-    margin: 20px 0 20px 10px;
-   text-align: center;
+img.karma-members {
+    height: 4rem;
 }
 
 img.avatar {
-    height: 6.25rem;
+    height: 4em;
+}
+
+section.presentation>h3 {
+    margin: 25px 0 25px 10px;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 130%;
+    color: #7F5539;
 }
 
 .trainers {
     margin: 0 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .card {
@@ -158,29 +166,29 @@ img.avatar {
     background-color: #b08968;
     background-image: linear-gradient(0deg, #b08968 0%, #e6ccb2 100%);
     border-radius: 0.4em;
-    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    box-shadow: 0.3em 0.3em 0.7em #7F5539;
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: #b08968 .1em solid;
     text-align: center;
     padding-top: .5em;
+    margin: 0.2em;
 }
    
 .card:hover {
     border: #e6ccb2 0.1em solid;
+    box-shadow: 0.3em 0.3em 0.7em #b08968;
 }
 
 
 .crew {
-    margin: 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .karma-members {
     margin: 20px 10px;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-around;
 }
 
 /* Section organisation */
