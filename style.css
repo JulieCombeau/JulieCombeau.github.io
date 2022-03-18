@@ -53,19 +53,46 @@ h2 {
     height: 100vh;
 }
 
+section.presentation>h3 {
+    margin: 20px 0 20px 10px;
+   text-align: center;
+}
 
+.trainers {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crew {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.karma-members {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
 /* Section organisation */
 
 .organisation {
-    width: 100vw;
+        
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     border: 2px solid green;
 }
 
 /* Grid display page "Organisation" */
 
 .organisation-container {
+    margin: auto 0.5rem;
+    width: 100%;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -73,9 +100,9 @@ h2 {
 }
 
 .organisation-container > article {
-   
+      
     margin: 10px;
-    border: 3xp solid red;
+    border: 3px solid red;
     box-shadow: black 0px 3px 8px;
     border-radius: 5px;
     background-color:aqua
@@ -106,6 +133,18 @@ h2 {
 .organisation-block8 {
     grid-column: 4 / 5; 
 }
+
+/* picture's dimensions */
+
+.organisation-block1>img {
+    height: 20vh;
+    width: 20vw;
+}
+.organisation-block8>img {
+    height: 20vh;
+    width: 30vw;
+}
+
 
 /* Section methodology */
 
@@ -284,16 +323,32 @@ h2 {
 /* Section problematics */
 
 .problematics {
-    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-div {
-    width : calc(100% - 2rem);
-    height: 75%;
+.problematics > p {
+    margin: auto 0.5rem;
+}
+
+.problematics > div {
+    margin: auto 0;
+    width : 100%;
+    height: 55%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px dotted black;
+    border-radius: 10px;
+
 }
 
 .items {
@@ -302,55 +357,79 @@ div {
     grid-row: 3 / span 4 ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 100%;
     background-color: rgb(230, 204, 178) ;
 }
 
 .items > li {
     grid-column: span 1;
+    display: flex;
 }
 
 .items > li:first-child {
-    transform: rotate(-45deg);
-    align-self: center;
-    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
-
 .items > li:nth-child(2) {
-    transform: rotate(45deg);
-    align-self: center;
-    text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .items > li:nth-child(3) {
-    transform: rotate(45deg);
-    align-self: center;
-    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.items > li:last-child {
+.items > li:last-child  {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.items > li:first-child > p {
     transform: rotate(-45deg);
     align-self: center;
     text-align: center;
+    flex-grow: 1;
 }
 
-div > ul:first-child{
+.items > li:nth-child(2) > p {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.items > li:nth-child(3) > p {
+    transform: rotate(45deg);
+    align-self: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.items > li:last-child > p {
+    transform: rotate(-45deg);
+    align-self: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.problematics > div > ul:first-child{
     grid-column: 1 / span 2 ; 
     grid-row: 1 / span 2 ;
 }
 
-div > ul:nth-child(2){
+.problematics > div > ul:nth-child(2){
     grid-column: 7 / span 2 ; 
     grid-row: 1 / span 2 ;
 }
 
-div > ul:nth-child(3){
+.problematics > div > ul:nth-child(3){
     grid-column: 1 / span 2 ; 
     grid-row: 7 / span 2 ;
 }
 
-div > ul:nth-child(4){
+.problematics > div > ul:nth-child(4){
     grid-column: 7 / span 2 ; 
     grid-row: 7 / span 2 ;
 }
