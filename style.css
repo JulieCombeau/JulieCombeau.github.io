@@ -464,6 +464,38 @@ img.avatar {
     background-color: aqua;
 }
 
+#border1 {
+    margin : 0.2rem;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    border-left: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#border2 {
+    margin : 0.2rem;
+    grid-column: 7 / span 1;
+    grid-row: 3 / span 1;
+    border-right: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#border3 {
+    height: 90%;
+    grid-column: 2 / span 1;
+    grid-row: 6 / span 1;
+    border-left: 2.5px solid black;
+    border-top: 2.5px solid black;
+}
+
+#border4 {
+    height: 90%;
+    grid-column: 7 / span 1;
+    grid-row: 6 / span 1;
+    border-right: 2.5px solid black;
+    border-top: 2.5px solid black;
+}
+
 .items {
     display: grid;
     grid-column: 3 / span 4 ; 
