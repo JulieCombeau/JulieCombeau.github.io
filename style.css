@@ -153,72 +153,169 @@ section.presentation>h3 {
     height: 100vh;
     background-color: blueviolet;
     margin-bottom: 128px;
+    display: flex;
+    flex: 1;
+}
+
+.section-title {
+    align-self: center;
+}
+.methodology-container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 .scrum-title {
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    margin-bottom: 100px;
+    }
+
+.wild-title {
+    margin-bottom: 100px;
+}  
+.methodology-intro {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    margin: auto;
+    min-height: 10%;
+    flex-wrap: wrap;
+}
+
+.methodology-intro p {
+    font-size: 48px;
+    font-weight: 700;
+    flex-wrap: wrap;
 }
 
 .methods-blocks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
+
+/* .illustration {
+    max-height: auto;
+    max-width: 100%;
+} */
 
 .scrum-method {
     display: flex;
-    background-color: grey;
-    height: 800px;
-    width: 40vh;
+    flex-direction: column;
+    /* background-color: grey; */
+    border: solid black;
+    height: 80vh;
+    max-width: 40vw;
     justify-content: center;
-   
+    text-align: center;
+    
 }
 .wild-method {
-    display: flex; 
-    background-color: grey;
-    height: 800px;
-    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    height: 70vh;
+    max-width: 40vw;
     justify-content: center;
+    text-align: center;
 }
 .scrum-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-   
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .firstavoir {
-    height: 300px;
-    width: 300px;
     background-color: aqua;
+    font-size:3vw;
+    flex-wrap: wrap;
 }
 
 .secondavoir {
-    height: 300px;
-    width: 300px;
     background-color: aqua;
+    flex-wrap: wrap;
 }
 
 .wild-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .daily {
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
+    height: 25vw;
+    width: 25vh;
+    /* background-color: aqua; */
 }
 
 .retro {
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
+    height: 25vw;
+    width: 25vh;
+    /* background-color: aqua; */
+}
+
+@media screen and (min-width: 375px) {
+    .section-title {
+        margin: auto;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .methodology-intro p {
+        font-size: 24px;
+        font-weight: 700;
+        flex-wrap: wrap;
+    }
+
+    .wild-method {
+        display: flex;
+        flex-direction: column;
+        border: solid black;
+        min-height: 60vh;
+        max-width: 50vw;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+    }
+
+    .wild-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .wild-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 1rem
+    }
+
+    .wild-items p {
+        overflow: hidden;
+        overflow-wrap: break-word;
+        width: 100%;
+        padding-top: 5px;
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
 }
 
 
