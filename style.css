@@ -142,11 +142,33 @@ section.presentation>h3 {
    text-align: center;
 }
 
+img.avatar {
+    height: 6.25rem;
+}
+
 .trainers {
     margin: 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+
+.card {
+    width: 7rem;
+    height: 8rem;
+    background-color: #b08968;
+    background-image: linear-gradient(0deg, #b08968 0%, #e6ccb2 100%);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: #b08968 .1em solid;
+    text-align: center;
+    padding-top: .5em;
+}
+   
+.card:hover {
+    border: #e6ccb2 0.1em solid;
+}
+
 
 .crew {
     margin: 0 10px;
