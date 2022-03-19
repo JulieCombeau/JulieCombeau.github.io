@@ -619,6 +619,52 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
     height: 100vh;
 }
 
+.containerFun {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+.teamName {
+    margin: 0.5rem;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.teamName > p:first-child {
+    border: 1px solid black;
+    grid-column: 5 / span 5;
+    grid-row: 3 / span 3;
+}
+.teamName > p:nth-child(2) {
+    border: 1px solid black;
+    grid-column: 11 / span 3;
+    grid-row: 1 / span 2;
+}
+.teamName > p:nth-child(3) {
+    border: 1px solid black;
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+}
+.teamName > p:nth-child(4) {
+    border: 1px solid black;
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+}
+.teamName > p:nth-child(5) {
+    border: 1px solid black;
+    grid-column: 6 / span 3;
+    grid-row: 7 / span 1;
+}
+.teamName > p:last-child{
+    border: 1px solid black;
+    grid-column: 11 / span 3;
+    grid-row: 6 / span 1;
+}
+
 /* Section footer */
 .footer {
     display: flex;
