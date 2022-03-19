@@ -18,7 +18,7 @@ p {
 
 h2 {
   font-family: "Playfair Display SC", serif;
-  font-size: 3rem;
+  font-size: 10vw;
 }
 
 /* navigation  */
@@ -29,7 +29,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background: rgba(216, 183, 74, 0.808);
+  background: rgba(155, 150, 133, 0.966);
   height: 100vh;
   width: 100vw;
   z-index: 1;
@@ -57,12 +57,9 @@ li.navbar__links:focus {
   -webkit-text-fill-color: transparent;
 }
 
-.navbar__links:hover,
-.navbar__links:focus {
-}
-
 .navbar__links > a {
   text-decoration: none;
+  color: black;
 }
 
 .show-nav {
@@ -838,6 +835,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
