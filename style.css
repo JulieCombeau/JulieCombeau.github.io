@@ -194,69 +194,108 @@ section.presentation>h3 {
 /* Section organisation */
 
 .organisation {
-        
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
-}
+   }
 
 /* Grid display page "Organisation" */
 
 .organisation-container {
-    margin: auto 0.5rem;
+    margin: 2rem 0;
     width: 100%;
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    border: 1px solid black;
-}
+    }
 
 .organisation-container > article {
-      
-    margin: 10px;
-    border: 2px solid black;
-    box-shadow: black 0px 3px 8px;
-    border-radius: 5px;
-    /* background-color:aqua */
+    margin: 3px;
 }
 
 .organisation-block1 {
-    grid-column: 1 / 2;
-    border: 3xp solid red;
+    grid-column: 1 / 4;
+    margin: 4px 4px 0px 4px;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;
 }
+
 .organisation-block2 {
-    grid-column: 2 / 5;
+    grid-column: 1 / 4;
+    margin: 0px 4px 0px 4px;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;  
 }
+
 .organisation-block3 {
-    grid-column: 1 / 4;
-}
-.organisation-block4 {
     grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;  
+    
 }
+
+.organisation-block4 {
+    grid-column: 1 / 5;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;  
+}
+
 .organisation-block5 {
-    grid-column: 1 / 2;
-}
-.organisation-block6 {
-    grid-column: 2 / 5;
-}
-.organisation-block7 {
     grid-column: 1 / 4;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;  
 }
-.organisation-block8 {
+
+.organisation-block6 {
     grid-column: 4 / 5; 
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;  
 }
 
 /* picture's dimensions */
 
-.organisation-block1>img {
-    height: 20vh;
-    width: 20vw;
+.organisation-block3>img {
+    display: block;
+    width: 55vw;
+    margin-top: 8vh;
 }
-.organisation-block8>img {
-    height: 20vh;
-    width: 30vw;
+
+.organisation-block5>img {
+    display: block;
+    height: 25vh;
+    width: 35vw;
+    margin: auto;
+}
+
+/* font */
+
+p {
+    font-size: 0.7rem;
+}
+
+/* text display */
+
+.organisation-container article h3 {
+    margin : 0.3rem 0.2rem; 
+    font-family: 'Playfair Display SC', serif;
+    color: #7F5539;
+}
+
+.organisation-container article p {
+    margin: 0.2rem 0.4rem 0.3rem 0.6rem;
+    text-align: justify;
+}
+
+.organisation h2 {
+    border-bottom: 2px solid black;
 }
 
 
