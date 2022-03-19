@@ -17,8 +17,9 @@ p {
 }
 
 h2 {
+  margin-left: 3vw;
   font-family: "Playfair Display SC", serif;
-  font-size: 10vw;
+  font-size: 8vw;
 }
 
 /* navigation  */
