@@ -23,7 +23,7 @@ h2 {
 
 .navbar {
   position: fixed;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -59,10 +59,19 @@ li.navbar__links:focus {
 .navbar__links:focus {
 }
 
+.navbar__links > a {
+  text-decoration: none;
+}
+
 .show-nav {
-  display: none;
+  display: flex;
   width: 100%;
 }
+
+/* .hide-bar {
+  display: none;
+} */
+
 .navbar__links {
   padding: 0 10px;
 }
