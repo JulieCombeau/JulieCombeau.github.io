@@ -445,6 +445,7 @@ section.presentation>h3 {
 
 .problematics > p {
     margin: auto 0.5rem;
+    line-height: 1.5;
 }
 
 .problematics > div {
