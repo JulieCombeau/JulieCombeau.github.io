@@ -68,9 +68,9 @@ li.navbar__links:focus {
   width: 100%;
 }
 
-/* .hide-bar {
+.bar__anim {
   display: none;
-} */
+}
 
 .navbar__links {
   padding: 0 10px;
