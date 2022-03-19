@@ -134,6 +134,11 @@ li.navbar__links:focus {
   max-width: 90vw;
 }
 
+/* Main */
+main {
+  width: 100vw;
+}
+
 /* Section presentation */
 
 .presentation {
