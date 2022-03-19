@@ -179,10 +179,18 @@ section.presentation>h3 {
     box-shadow: 0.3em 0.3em 0.7em #b08968;
 }
 
+.trainersWho {
+    margin: 5% 5% 0 5%;
+}
+
+.karmaWho {
+    margin: 0 5% 2% 5%;
+}
 
 .crew {
     display: flex;
     justify-content: space-around;
+    font-family: 'Antic Slab', serif;
 }
 
 .karma-members {
