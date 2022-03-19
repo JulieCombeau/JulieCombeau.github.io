@@ -183,8 +183,26 @@ section.presentation>h3 {
     margin: 5% 5% 0 5%;
 }
 
+p.trainersWho:first-letter{
+    display:block;
+    float:left;
+    color:rgb(0, 0, 0);
+    font-size:200%;
+    font-family: 'Playfair Display SC', serif;
+    margin-right:.2em;
+}
+
 .karmaWho {
     margin: 0 5% 2% 5%;
+}
+
+p.karmaWho:first-letter{
+    display:block;
+    float:left;
+    color:rgb(0, 0, 0);
+    font-size:200%;
+    font-family: 'Playfair Display SC', serif;
+    margin-right:.2em;
 }
 
 .crew {
