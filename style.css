@@ -467,6 +467,10 @@ section.presentation>h3 {
     border-radius: 10px;
 }
 
+.description > li {
+    text-align: center;
+}
+
 .problematics > div > hr {
     margin: 0;
     width: 100%;
