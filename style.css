@@ -181,6 +181,7 @@ section.presentation>h3 {
     transition: transform 1s;
     transform: scale(1.4);
     filter: none;
+    z-index: 5;
 }
 
 .trainersWho {
