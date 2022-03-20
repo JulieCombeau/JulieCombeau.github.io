@@ -27,13 +27,13 @@ h2 {
 .navbar {
   position: fixed;
   display: none;
-  align-items: center;
-  justify-content: space-between;
+
   padding: 10px;
-  background: rgba(155, 150, 133, 0.966);
+  background: url(/assets/images/background2.jpg);
   height: 100vh;
   width: 100vw;
   z-index: 1;
+  opacity: 0.9;
 
   /* For desktop version */
   /* border-bottom-right-radius: 100%;
@@ -48,14 +48,15 @@ h2 {
   align-items: center;
   font-family: "Playfair Display SC", serif;
   font-size: 2rem;
+  text-align: center;
+  animation-name: showNav;
+  animation-duration: 800ms;
 }
 
 li.navbar__links:hover,
 li.navbar__links:focus {
   font-size: 3rem;
-  background: linear-gradient(to top, #111111, #524a4f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: linear-gradient(to top, #111111, #524a4f);
 }
 
 .navbar__links > a {
@@ -65,16 +66,28 @@ li.navbar__links:focus {
 
 .show-nav {
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  animation-name: showNav;
+  animation-duration: 800ms;
+}
+
+@keyframes showNav {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .bar__anim {
   display: none;
 }
 
-.navbar__links {
+/* .navbar__links {
   padding: 0 10px;
-}
+} */
 
 .burger {
   position: fixed;
