@@ -172,14 +172,15 @@ section.presentation>h3 {
     text-align: center;
     padding-top: .5em;
     margin: 0.2em;
+    filter: grayscale(100%);
 }
    
 .card:hover {
     border: #e6ccb2 0.1em solid;
     box-shadow: 0.3em 0.3em 0.7em #b08968;
     transition: transform 1s;
-    transform-style: preserve-3d;
-    transform: scale(1.4)
+    transform: scale(1.4);
+    filter: none;
 }
 
 .trainersWho {
