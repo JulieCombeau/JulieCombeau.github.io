@@ -27,7 +27,6 @@ h2 {
 .navbar {
   position: fixed;
   display: none;
-
   background-color: rgba(231, 231, 231, 0.87);
   height: 100vh;
   width: 100vw;
@@ -73,10 +72,10 @@ h2 {
   animation-name: showNav;
   animation-duration: 800ms;
 }
-/* .hide-nav {
+.hide-nav {
   animation-name: hideNav;
   animation-duration: 800ms;
-} */
+}
 @keyframes hideNav {
   from {
     width: 100%;
@@ -146,17 +145,17 @@ h2 {
 
 .header img {
   animation-name: showElements;
-  animation-duration: 2s;
+  animation-duration: 3s;
   height: auto;
   max-width: 90vw;
 }
 
 @keyframes showElements {
   from {
-    max-width: 0vw;
+    opacity: 0;
   }
   to {
-    max-width: 90vw;
+    opacity: 1;
   }
 }
 

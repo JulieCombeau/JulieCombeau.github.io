@@ -1,12 +1,19 @@
-const navbar = document.querySelector(".navbar");
-const burger = document.querySelector(".burger");
-burger.addEventListener("click", () => {
-  navbar.classList.toggle("show-nav");
-});
+function showNav() {
+  const navbar = document.querySelector(".navbar");
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => {
+    navbar.classList.toggle("show-nav");
+  });
+}
 
-const navbarLinks = document.querySelector(".links");
-navbarLinks.addEventListener("click", () => {
-  navbar.classList.remove("show-nav");
-  navbar.classList.add("hide-nav");
-  navbar.classList.remove("hide-nav");
-});
+showNav();
+
+function removeNav() {
+  const links = document.getElementsByClassName(".links");
+  const navbar = document.querySelector(".navbar__ul");
+  navbar.addEventListener("click", (e) => {
+    navbar.classList.remove("show-nav");
+    console.log(e);
+  });
+}
+removeNav();
