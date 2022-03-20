@@ -172,17 +172,47 @@ section.presentation>h3 {
     text-align: center;
     padding-top: .5em;
     margin: 0.2em;
+    filter: grayscale(100%);
 }
    
 .card:hover {
     border: #e6ccb2 0.1em solid;
     box-shadow: 0.3em 0.3em 0.7em #b08968;
+    transition: transform 1s;
+    transform: scale(1.4);
+    filter: none;
 }
 
+.trainersWho {
+    margin: 5% 5% 0 5%;
+}
+
+p.trainersWho:first-letter{
+    display:block;
+    float:left;
+    color:rgb(0, 0, 0);
+    font-size:200%;
+    font-family: 'Playfair Display SC', serif;
+    margin-right:.2em;
+}
+
+.karmaWho {
+    margin: 0 5% 2% 5%;
+}
+
+p.karmaWho:first-letter{
+    display:block;
+    float:left;
+    color:rgb(0, 0, 0);
+    font-size:200%;
+    font-family: 'Playfair Display SC', serif;
+    margin-right:.2em;
+}
 
 .crew {
     display: flex;
     justify-content: space-around;
+    font-family: 'Antic Slab', serif;
 }
 
 .karma-members {
