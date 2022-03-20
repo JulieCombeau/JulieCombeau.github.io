@@ -5,15 +5,13 @@ function showNav() {
     navbar.classList.toggle("show-nav");
   });
 }
-
 showNav();
 
 function removeNav() {
-  const links = document.getElementsByClassName(".links");
-  const navbar = document.querySelector(".navbar__ul");
-  navbar.addEventListener("click", (e) => {
-    navbar.classList.remove("show-nav");
-    console.log(e);
+  const navbar = document.querySelector(".navbar");
+  const navbar_ul = document.querySelector("ul.navbar__ul");
+  navbar_ul.addEventListener("click", () => {
+    navbar.classList.toggle("show-nav");
   });
 }
 removeNav();

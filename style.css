@@ -45,6 +45,8 @@ h2 {
   text-align: center;
   animation-name: showNav;
   animation-duration: 800ms;
+  /* animation-name: hideNav;
+  animation-duration: 800ms; */
 }
 .navbar__links {
   font-family: "Playfair Display SC", serif;
@@ -72,16 +74,16 @@ h2 {
   animation-name: showNav;
   animation-duration: 800ms;
 }
-.hide-nav {
+/* .hide-nav {
   animation-name: hideNav;
   animation-duration: 800ms;
-}
+} */
 @keyframes hideNav {
   from {
-    width: 100%;
+    opacity: 1;
   }
   to {
-    width: 0%;
+    opacity: 0;
   }
 }
 
