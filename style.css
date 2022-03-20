@@ -232,7 +232,7 @@ section.presentation > h3 {
   text-align: center;
   padding-top: 0.5em;
   margin: 0.2em;
-  filter: grayscale(100%);
+  filter: grayscale(75%);
 }
 
 .card:hover {
