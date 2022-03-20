@@ -131,7 +131,6 @@ li.navbar__links:focus {
 /* Header */
 
 .header {
-  text-align: center;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -139,8 +138,19 @@ li.navbar__links:focus {
 }
 
 .header img {
+  animation-name: showElements;
+  animation-duration: 2s;
   height: auto;
   max-width: 90vw;
+}
+
+@keyframes showElements {
+  from {
+    max-width: 0vw;
+  }
+  to {
+    max-width: 90vw;
+  }
 }
 
 /* Main */
@@ -881,6 +891,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 @media screen and (max-width: 768px) {
   .footer-img {
+    animation-delay: 2s;
     flex-direction: column;
     gap: 1.2rem;
   }
