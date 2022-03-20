@@ -27,7 +27,6 @@ h2 {
 .navbar {
   position: fixed;
   display: none;
-
   padding: 10px;
   background: url(/assets/images/background2.jpg);
   height: 100vh;
@@ -70,6 +69,18 @@ li.navbar__links:focus {
   justify-content: space-between;
   animation-name: showNav;
   animation-duration: 800ms;
+}
+.hide-nav {
+  animation-name: hideNav;
+  animation-duration: 800ms;
+}
+@keyframes hideNav {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 @keyframes showNav {
