@@ -151,6 +151,10 @@ img.logolangage {
     margin-top: .25em;
 }
 
+img.formCrew {
+    width: 2em;
+}
+
 section.presentation>h3 {
     margin: 1.5em 0 1.2em 10px;
     text-align: center;
@@ -224,8 +228,28 @@ p.karmaWho:first-letter{
     font-family: 'Antic Slab', serif;
 }
 
+.formCrew {
+    margin-bottom: .5em;
+}
+
+.allCrew {
+    width: 6em;
+    height: 4em;
+    text-align: center;
+    background-color: #b08968;
+    border-radius: 0.4em;
+    margin-top: .5em;
+    padding-top: .8em;
+}
+
+li.allCrew:nth-child(2) {
+    background-color:#e6ccb2;
+    height: 4.5em;
+    padding-top: 1.5em;
+}
+
 .karma-members {
-    margin: 20px 10px;
+    margin: 1em auto;
     display: flex;
     justify-content: space-around;
 }
