@@ -483,29 +483,34 @@ p {
 }
 
 .methods-blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding-top: 50px; */
 }
 
+
+
 .scrum-method {
-  display: flex;
-  flex-direction: column;
-  /* background-color: grey; */
-  border: solid black;
-  height: 80vh;
-  max-width: 40vw;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    height: 70vh;
+    max-width: 40vw;
+    justify-content: center;
+    text-align: center;
+    
+    
 }
 .wild-method {
-  display: flex;
-  flex-direction: column;
-  border: solid black;
-  height: 70vh;
-  max-width: 40vw;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    height: 70vh;
+    max-width: 40vw;
+    justify-content: center;
+    text-align: center;
+  
 }
 .scrum-items {
   display: flex;
@@ -516,14 +521,26 @@ p {
 }
 
 .firstavoir {
-  /* background-color: aqua; */
-  font-size: 3vw;
-  flex-wrap: wrap;
+    /* background-color: aqua; */
+    font-size:3vw;
+    flex-wrap: wrap;
+    height: 25vw;
+    width: 25vh;
+    
+    background-size: cover;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    background-color: #524a4f;
 }
 
 .secondavoir {
-  /* background-color: aqua; */
-  flex-wrap: wrap;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    height: 25vw;
+    width: 25vh;
+    
+    background-size: cover;
+    background-color: #524a4f;
 }
 
 .wild-items {
@@ -536,23 +553,107 @@ p {
 }
 
 .daily {
-  height: 25vw;
-  width: 25vh;
-  /* background-color: aqua; */
+    height: 25vw;
+    width: 25vh;
+    margin-bottom: 48px;
+    background-color: #524a4f;
 }
 
 .retro {
-  height: 25vw;
-  width: 25vh;
-  /* background-color: aqua; */
+    height: 25vw;
+    width: 25vh;
+    background-color: #524a4f;
 }
 
 @media screen and (min-width: 375px) {
-  .section-title {
-    margin: auto;
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
+    .section-title {
+        /* margin: auto; */
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .methodology-intro {
+        font-size: 24px;
+        font-weight: 700;
+        flex-wrap: wrap;
+        margin-top: 24px;
+        width: 90vw;
+      
+    }
+
+    .wild-method {
+        display: flex;
+        flex-direction: column;
+        border: solid black;
+        min-height: 60vh;
+        max-width: 50vw;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+    }
+    .scrum-method {
+        display: flex;
+        flex-direction: column;
+        border: solid black;
+        min-height: 60vh;
+        max-width: 50vw;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+    }
+
+    .wild-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 70px;
+    }
+    .scrum-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 70px;
+    }
+
+    .wild-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem
+    }
+    .scrum-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem
+    }
+
+    .wild-items p {
+        overflow: hidden;
+        overflow-wrap: break-word;
+        width: 100%;
+        padding-top: 5px;
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .scrum-items p {
+        overflow: hidden;
+        overflow-wrap: break-word;
+        width: 100%;
+        padding-top: 5px;
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
   .methodology-intro p {
     font-size: 24px;
