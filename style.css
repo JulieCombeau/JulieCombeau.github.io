@@ -865,6 +865,10 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   gap: 2rem;
 }
 
+.footer-img img {
+  max-width: 10vw;
+}
+
 .footer-text {
   display: flex;
   flex-direction: column;
@@ -881,6 +885,10 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
     gap: 1.2rem;
   }
   .footer-text p {
-    font-size: 2rem;
+    font-size: 1.3rem;
+  }
+  .footer-img img {
+    width: auto;
+    min-height: 10vh;
   }
 }
