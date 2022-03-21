@@ -422,7 +422,6 @@ p {
 .methodology {
   width: 100vw;
   height: 100vh;
-  /* background-color: blueviolet; */
   margin-bottom: 128px;
   display: flex;
   flex-direction: column;
@@ -445,6 +444,7 @@ p {
   /* flex-direction: row; */
   /* align-items: flex-start; */
   margin-bottom: 100px;
+  font-family: serif;
 }
 
 .wild-title {
@@ -469,7 +469,7 @@ p {
 .methods-blocks {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   /* padding-top: 50px; */
 }
 
@@ -500,7 +500,6 @@ p {
 }
 
 .firstavoir {
-  /* background-color: aqua; */
   font-size: 3vw;
   flex-wrap: wrap;
   height: 25vw;
@@ -513,7 +512,6 @@ p {
 }
 
 .secondavoir {
-  /* background-color: aqua; */
   flex-wrap: wrap;
   height: 25vw;
   width: 25vh;
@@ -564,7 +562,7 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -575,7 +573,7 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -587,12 +585,14 @@ p {
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 70px;
+    font-family: serif;
   }
   .scrum-title {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 70px;
+    font-family: serif;
   }
 
   .wild-items {
@@ -619,7 +619,6 @@ p {
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   .scrum-items p {
     overflow: hidden;
@@ -630,7 +629,6 @@ p {
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
   .methodology-intro p {
@@ -674,7 +672,6 @@ p {
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
 
