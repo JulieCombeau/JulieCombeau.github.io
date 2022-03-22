@@ -994,6 +994,16 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   justify-content: space-between;
 }
 
+.week1 > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.week2 > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .week1 {
   width: 45vw;
   display: grid;
@@ -1008,22 +1018,19 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   grid-row: 1 / span 1;
 }
 .week1 > img:nth-child(2) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 .week1 > img:nth-child(3) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 .week1 > img:nth-child(4) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
 }
 
 .ranking {
@@ -1078,22 +1085,19 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   grid-row: 1 / span 1;
 }
 .week2 > img:nth-child(2) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 .week2 > img:nth-child(3) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 .week2 > img:nth-child(4) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
 }
 
 /* Section footer */
