@@ -229,8 +229,8 @@ h2 {
 
 .presentation {
   margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 90%;
+  height: 95%;
 }
 
 img.karma-members {
@@ -262,7 +262,6 @@ section.presentation > h3 {
   margin: 0 0.7em;
   display: flex;
   justify-content: space-around;
-  max-width: 90vw;
 }
 
 .card {
@@ -343,6 +342,11 @@ li.allCrew:nth-child(2) {
   height: 4.5em;
   padding-top: 1.5em;
   border-radius: 0.4em 0.4em 0 0;
+}
+
+img.circleEmoji {
+  width: 1.6em;
+  margin-top: .3em;
 }
 
 .karma-members {
