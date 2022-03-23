@@ -295,7 +295,7 @@ section.presentation > h3 {
   .card, .card:hover {
     width: 120%;
     height: 8rem;
-    margin: 0.8em;
+    margin: 1em;
   }
   img.avatar, img.karma-members {
     width: 4.5em;
