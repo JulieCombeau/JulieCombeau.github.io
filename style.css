@@ -441,23 +441,15 @@ p {
 .methodology {
   width: 100vw;
   height: 100vh;
-  margin-bottom: 128px;
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 .section-title {
   align-self: center;
 }
-.methodology-container {
-  width: 90vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
+
 .scrum-title {
-  margin-bottom: 100px;
   font-family: "Playfair Display SC", serif;
   height: 25px;
   color: #7f5539;
@@ -543,10 +535,9 @@ p {
 .wild-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  /* overflow: hidden; */
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 .daily {
@@ -562,7 +553,7 @@ p {
   background-color: #524a4f;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 640px) {
   .section-title {
     /* margin: auto; */
     font-size: 30px;
@@ -585,7 +576,6 @@ p {
     width: 40vw;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
     margin: 1rem 0;
   }
   .scrum-method {
@@ -596,7 +586,6 @@ p {
     width: 40vw;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
     margin: 1rem 0;
   }
 
@@ -604,13 +593,11 @@ p {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
-    padding-bottom: 70px;
   }
   .scrum-title {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
-    padding-bottom: 70px;
   }
 
   .wild-items {
@@ -661,10 +648,9 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
     margin: 1rem 0;
   }
 
