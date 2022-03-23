@@ -558,6 +558,7 @@ p {
   justify-content: space-between;
   /* overflow: hidden; */
   flex-wrap: wrap;
+  max-width: 40%;
 }
 
 .firstavoir {
@@ -590,15 +591,15 @@ p {
 }
 
 .daily {
-  height: 25vw;
-  width: 25vh;
+  height: 25vh;
+  max-width: 25vw;
   margin-bottom: 48px;
   background-color: #524a4f;
 }
 
 .retro {
-  height: 25vw;
-  width: 25vh;
+  height: 25vh;
+  max-width: 25vw;
   background-color: #524a4f;
 }
 
