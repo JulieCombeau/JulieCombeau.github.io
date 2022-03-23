@@ -192,7 +192,7 @@ h2 {
 
 .header .illustration_mobile {
   animation-name: showElements;
-  animation-duration: 5s;
+  animation-duration: 3s;
   height: auto;
   max-width: 90vw;
 }
@@ -200,7 +200,7 @@ h2 {
 .header .illustration_desktop {
   display: none;
   animation-name: showElements;
-  animation-duration: 5s;
+  animation-duration: 3s;
   height: auto;
   max-width: 90vw;
 }
