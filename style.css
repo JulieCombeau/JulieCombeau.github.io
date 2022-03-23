@@ -230,8 +230,8 @@ h2 {
 
 .presentation {
   margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 90%;
+  height: 95%;
 }
 
 img.karma-members {
@@ -263,7 +263,6 @@ section.presentation > h3 {
   margin: 0 0.7em;
   display: flex;
   justify-content: space-around;
-  max-width: 90vw;
 }
 
 .card {
@@ -277,7 +276,7 @@ section.presentation > h3 {
   text-align: center;
   padding-top: 0.5em;
   margin: 0.2em;
-  filter: grayscale(100%);
+  filter: grayscale(75%);
 }
 
 .card:hover {
@@ -291,6 +290,37 @@ section.presentation > h3 {
 
 .card p {
   margin-top: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .card, .card:hover {
+    width: 120%;
+    height: 8rem;
+    margin: 1em;
+  }
+  img.avatar, img.karma-members {
+    width: 4.5em;
+    height: auto;
+  }
+  p.trainersWho {
+    margin: 1em 5% 0 5%;
+  }
+  section.presentation > h3 {
+  margin: .5em 0 .5em 10px; 
+  }
+  p.trainersWho, p.karmaWho, p.circleMembers {
+    font-size: 100%;
+  }
+  p.circleMembers {
+    padding-left: 5%;
+  }
+  ul.karma-members {
+    padding-top: 0;
+  }
+  li.allCrew:nth-child(2) {
+    padding: 0;
+    height: 4em;
+  }
 }
 
 .trainersWho {
@@ -346,13 +376,17 @@ li.allCrew:nth-child(2) {
   border-radius: 0.4em 0.4em 0 0;
 }
 
+img.circleEmoji {
+  width: 1.6em;
+  margin-top: .25em;
+}
+
 .karma-members {
   display: flex;
   justify-content: space-around;
   background-color: #e6ccb2;
   background-size: cover;
   height: 9.8em;
-  max-width: 100%;
   padding-top: 0.8em;
 }
 
@@ -746,29 +780,32 @@ p {
 /* Section problematics */
 
 .problematics {
+  border: 2px solid red;
   margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 90%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
 }
-.problematics h2 {
-  max-width: 90vw;
+.problematics > h2 {
+  max-width: 90%;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .problematics > p {
-  text-align: center;
-  max-width: 80vw;
+  max-width: 80%;
   margin: auto 0;
   line-height: 1.5;
   font-size: 1rem;
 }
 
-.problematics > div {
-  height: 57%;
+.problems {
+  margin: auto;
+  width: 330px;
+  height: 330px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -790,7 +827,7 @@ p {
   font-size: 0.8rem;
 }
 
-.problematics > div > hr {
+.problems > hr {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -913,22 +950,22 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   flex-grow: 1;
 }
 
-.problematics > div > ul:first-child {
+.problems > ul:first-child {
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
 }
 
-.problematics > div > ul:nth-child(2) {
+.problems > ul:nth-child(2) {
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
 }
 
-.problematics > div > ul:nth-child(3) {
+.problems > ul:nth-child(3) {
   grid-column: 1 / span 3;
   grid-row: 7 / span 2;
 }
 
-.problematics > div > ul:nth-child(4) {
+.problems > ul:nth-child(4) {
   grid-column: 6 / span 3;
   grid-row: 7 / span 2;
 }
