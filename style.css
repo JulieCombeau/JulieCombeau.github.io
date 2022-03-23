@@ -5,6 +5,50 @@
   --main-h2-font: "Playfair Display SC", serif;
 }
 
+body {
+  width: calc (100vw - 0.5rem);
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive grid for desktop */
+
+@media screen and (min-width: 768px) {
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+  }
+  .organisation-container {
+    width: 45vw;
+  }
+  .organisation h2 {
+    color: red;
+    width: 20%;
+  }
+  .methodology {
+    width: 45%;
+  }
+  .problematics {
+    width: 45%;
+  }
+  .problematics h2 {
+    color: red;
+    width: 20%;
+  }
+  .fun {
+    width: 45%;
+  }
+  .problematics > p {
+    margin: 1rem 0;
+  }
+  .kahoot {
+    justify-content: center;
+  }
+}
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -19,7 +63,7 @@ p {
 h2 {
   margin-left: 3vw;
   font-family: "Playfair Display SC", serif;
-  font-size: 8vw;
+  font-size: 3vw;
 }
 
 /* navigation  */
@@ -108,7 +152,7 @@ h2 {
 
 .burger {
   top: 15%;
-  left: 90%;
+  left: 85%;
   transform: translate(-50%, -50%);
   position: fixed;
   width: 50px;
@@ -139,10 +183,11 @@ h2 {
 /* Header */
 
 .header {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .header .illustration_mobile {
@@ -187,7 +232,7 @@ main {
 
 .presentation {
   margin: 0 auto;
-  width: 90vw;
+  max-width: 90vw;
   height: 100vh;
 }
 
@@ -220,6 +265,7 @@ section.presentation > h3 {
   margin: 0 0.7em;
   display: flex;
   justify-content: space-around;
+  max-width: 90vw;
 }
 
 .card {
@@ -308,13 +354,13 @@ li.allCrew:nth-child(2) {
   background-color: #e6ccb2;
   background-size: cover;
   height: 9.8em;
-  width: 100%;
+  max-width: 100%;
   padding-top: 0.8em;
 }
 
 .circleMembers {
   background-color: #e6ccb2;
-  width: 100%;
+  max-width: 100%;
   height: 2.6em;
 }
 
@@ -330,7 +376,9 @@ p.circleMembers:first-letter {
 /* Section organisation */
 
 .organisation {
+  margin: 0 auto;
   height: 100vh;
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,7 +388,7 @@ p.circleMembers:first-letter {
 
 .organisation-container {
   margin: 2rem 0;
-  width: 90vw;
+  max-width: 90vw;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -431,7 +479,7 @@ p {
 }
 
 .organisation h2 {
-  width: 90vw;
+  max-width: 90vw;
   align-self: flex-start;
   margin-left: 3rem;
 }
@@ -439,7 +487,8 @@ p {
 /* Section methodology */
 
 .methodology {
-  width: 100vw;
+  margin: 0 auto;
+  max-width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -683,21 +732,22 @@ p {
 /* Section problematics */
 
 .problematics {
-  width: 100vw;
+  margin: 0 auto;
+  max-width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .problematics h2 {
-  width: 90vw;
+  max-width: 90vw;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .problematics > p {
   text-align: center;
-  width: 80vw;
+  max-width: 80vw;
   margin: auto 0;
   line-height: 1.5;
   font-size: 1rem;
@@ -872,7 +922,8 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 /* Section fun */
 
 .fun {
-  width: 100vw;
+  max-width: 90vw;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -881,13 +932,13 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .fun h2 {
-  width: 90vw;
+  max-width: 90vw;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .containerFun {
-  width: 90vw;
+  max-width: 90vw;
   margin-top: 1.5rem;
   height: 80vh;
   display: flex;
@@ -929,7 +980,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   border: #b08968 0.1em solid;
   box-shadow: -0.3em -0.3em 2em #7f5539;
   transition: transform 1s;
-  transform: scale(1.4);
+  transform: scale(1.2);
   filter: none;
 }
 
@@ -1016,7 +1067,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week1 {
-  width: 45vw;
+  max-width: 45vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1083,7 +1134,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week2 {
-  width: 45vw;
+  max-width: 45vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1113,10 +1164,11 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 /* Section footer */
 .footer {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
 }
 
@@ -1165,6 +1217,10 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 10vh;
+    height: 40vh;
+  }
   .footer-img {
     display: flex;
     flex-direction: row;
