@@ -186,9 +186,9 @@ main {
 /* Section presentation */
 
 .presentation {
-  width: 100vw;
+  margin: 0 auto;
+  width: 90vw;
   height: 100vh;
-  margin-left: 0.2em;
 }
 
 img.karma-members {
@@ -333,13 +333,14 @@ p.circleMembers:first-letter {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Grid display page "Organisation" */
 
 .organisation-container {
   margin: 2rem 0;
-  width: 100%;
+  width: 90vw;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -430,7 +431,9 @@ p {
 }
 
 .organisation h2 {
-  border-bottom: 2px solid black;
+  width: 90vw;
+  align-self: flex-start;
+  margin-left: 3rem;
 }
 
 /* Section methodology */
