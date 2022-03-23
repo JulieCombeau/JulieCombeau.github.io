@@ -5,6 +5,11 @@
   --main-h2-font: "Playfair Display SC", serif;
 }
 
+body {
+  width: calc (100vw - 0.5rem);
+  border-right: 2px solid black;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -108,7 +113,7 @@ h2 {
 
 .burger {
   top: 15%;
-  left: 90%;
+  left: 85%;
   transform: translate(-50%, -50%);
   position: fixed;
   width: 50px;
@@ -139,10 +144,11 @@ h2 {
 /* Header */
 
 .header {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .header .illustration_mobile {
@@ -330,7 +336,9 @@ p.circleMembers:first-letter {
 /* Section organisation */
 
 .organisation {
+  margin: 0 auto;
   height: 100vh;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,7 +447,8 @@ p {
 /* Section methodology */
 
 .methodology {
-  width: 100vw;
+  margin: 0 auto;
+  width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -683,7 +692,8 @@ p {
 /* Section problematics */
 
 .problematics {
-  width: 100vw;
+  margin: 0 auto;
+  width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -872,7 +882,8 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 /* Section fun */
 
 .fun {
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -929,7 +940,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   border: #b08968 0.1em solid;
   box-shadow: -0.3em -0.3em 2em #7f5539;
   transition: transform 1s;
-  transform: scale(1.4);
+  transform: scale(1.2);
   filter: none;
 }
 
@@ -1113,10 +1124,11 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 /* Section footer */
 .footer {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
 }
 
@@ -1165,6 +1177,10 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 10vh;
+    height: 40vh;
+  }
   .footer-img {
     display: flex;
     flex-direction: row;
