@@ -145,11 +145,28 @@ h2 {
   align-items: center;
 }
 
-.header img {
+.header .illustration_mobile {
   animation-name: showElements;
-  animation-duration: 3s;
+  animation-duration: 5s;
   height: auto;
   max-width: 90vw;
+}
+
+.header .illustration_desktop {
+  display: none;
+  animation-name: showElements;
+  animation-duration: 5s;
+  height: auto;
+  max-width: 90vw;
+}
+
+@media screen and (min-width: 768px) {
+  .header .illustration_desktop {
+    display: block;
+  }
+  .header .illustration_mobile {
+    display: none;
+  }
 }
 
 @keyframes showElements {
@@ -869,7 +886,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .fun > h2 {
-    align-self: start;
+  align-self: start;
 }
 
 .containerFun {
@@ -1039,9 +1056,9 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .ranking > li {
- align-items: center;
- justify-content: center;
- width: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
 }
 
 .ranking > li:first-child {
@@ -1065,7 +1082,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .ranking > li > p {
- transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .week2 {
