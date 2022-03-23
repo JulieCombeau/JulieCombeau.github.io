@@ -20,6 +20,7 @@ body {
     flex-direction: row;
     width: 100vw;
     justify-content: space-around;
+  
   }
   .organisation-container {
     width: 45vw;
@@ -373,23 +374,26 @@ p.circleMembers:first-letter {
 /* Section organisation */
 
 .organisation {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   height: 100vh;
-  max-width: 90vw;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  background-color: red;
 }
 
 /* Grid display page "Organisation" */
 
 .organisation-container {
-  margin: 2rem 0;
+  margin: 2rem 0.1rem;
   max-width: 90vw;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  background-color: yellow;
+
 }
 
 .organisation-container > article {
@@ -428,14 +432,14 @@ p.circleMembers:first-letter {
 }
 
 .organisation-block5 {
-  grid-column: 1 / 4;
-  border: 2px solid black;
+  grid-column: 1 / 3;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .organisation-block6 {
-  grid-column: 4 / 5;
+  grid-column: 3 / 5;
   border: 2px solid black;
   box-shadow: black 0px 3px 8px;
   border-radius: 5px;
@@ -445,15 +449,20 @@ p.circleMembers:first-letter {
 
 .organisation-block3 > img {
   display: block;
-  width: 55vw;
-  margin-top: 8vh;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  /* margin-top: 8vh; */
+  filter: grayscale(50%);
 }
 
 .organisation-block5 > img {
-  display: block;
-  height: 25vh;
+  /* display: block; */
+  height: 20vh;
   width: 35vw;
   margin: auto;
+  align-self: center;
+  filter: grayscale(50%);
 }
 
 /* font */
@@ -461,6 +470,13 @@ p.circleMembers:first-letter {
 p {
   font-size: 0.7rem;
 }
+
+@media screen and (min-width: 768px) {
+  p {
+    /* font-size: 1rem; */
+    /* line-height: 1.2rem */
+    }
+  }
 
 /* text display */
 
