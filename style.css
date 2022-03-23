@@ -422,7 +422,6 @@ p {
 .methodology {
   width: 100vw;
   height: 100vh;
-  /* background-color: blueviolet; */
   margin-bottom: 128px;
   display: flex;
   flex-direction: column;
@@ -439,16 +438,17 @@ p {
   flex-direction: column;
 }
 .scrum-title {
-  /* display: flex; */
-  /* text-align: center; */
-  /* align-items: center; */
-  /* flex-direction: row; */
-  /* align-items: flex-start; */
   margin-bottom: 100px;
+  font-family: "Playfair Display SC", serif;
+  height: 25px;
+  color: #7f5539;
 }
 
 .wild-title {
   margin-bottom: 100px;
+  font-family: "Playfair Display SC", serif;
+  height: 50px;
+  color: #7f5539;
 }
 .methodology-intro {
   display: flex;
@@ -464,12 +464,13 @@ p {
   font-size: 48px;
   font-weight: 700;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .methods-blocks {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   /* padding-top: 50px; */
 }
 
@@ -495,13 +496,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-wrap: wrap;
 }
 
 .firstavoir {
-  /* background-color: aqua; */
-  font-size: 3vw;
+  font-size: 11.2px;
   flex-wrap: wrap;
   height: 25vw;
   width: 25vh;
@@ -513,11 +513,10 @@ p {
 }
 
 .secondavoir {
-  /* background-color: aqua; */
   flex-wrap: wrap;
   height: 25vw;
   width: 25vh;
-
+  font-size: 11.2px;
   background-size: cover;
   background-color: #524a4f;
 }
@@ -564,7 +563,7 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -575,7 +574,7 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -615,22 +614,21 @@ p {
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 11.2px;
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   .scrum-items p {
-    overflow: hidden;
+    /* overflow: hidden; */
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 11.2px;
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 50px;
   }
 
   .methodology-intro p {
@@ -670,11 +668,10 @@ p {
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 11.2px;
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
 
