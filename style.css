@@ -422,7 +422,6 @@ p {
 .methodology {
   width: 100vw;
   height: 100vh;
-  /* background-color: blueviolet; */
   margin-bottom: 128px;
   display: flex;
   flex-direction: column;
@@ -439,16 +438,17 @@ p {
   flex-direction: column;
 }
 .scrum-title {
-  /* display: flex; */
-  /* text-align: center; */
-  /* align-items: center; */
-  /* flex-direction: row; */
-  /* align-items: flex-start; */
   margin-bottom: 100px;
+  font-family: "Playfair Display SC", serif;
+  height: 25px;
+  color: #7f5539;
 }
 
 .wild-title {
   margin-bottom: 100px;
+  font-family: "Playfair Display SC", serif;
+  height: 50px;
+  color: #7f5539;
 }
 .methodology-intro {
   display: flex;
@@ -464,12 +464,13 @@ p {
   font-size: 48px;
   font-weight: 700;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .methods-blocks {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   /* padding-top: 50px; */
 }
 
@@ -495,13 +496,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-wrap: wrap;
 }
 
 .firstavoir {
-  /* background-color: aqua; */
-  font-size: 3vw;
+  font-size: 11.2px;
   flex-wrap: wrap;
   height: 25vw;
   width: 25vh;
@@ -513,11 +513,10 @@ p {
 }
 
 .secondavoir {
-  /* background-color: aqua; */
   flex-wrap: wrap;
   height: 25vw;
   width: 25vh;
-
+  font-size: 11.2px;
   background-size: cover;
   background-color: #524a4f;
 }
@@ -564,7 +563,7 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -575,7 +574,7 @@ p {
     flex-direction: column;
     border: solid black;
     min-height: 60vh;
-    max-width: 50vw;
+    width: 40vw;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -615,22 +614,21 @@ p {
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 11.2px;
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   .scrum-items p {
-    overflow: hidden;
+    /* overflow: hidden; */
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 11.2px;
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 50px;
   }
 
   .methodology-intro p {
@@ -670,30 +668,30 @@ p {
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 11.2px;
     color: white;
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
 
 /* Section problematics */
 
 .problematics {
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .problematics > p {
-  margin: auto 0.5rem;
+  margin: auto 0;
   line-height: 1.5;
+  font-size: 1rem;
 }
 
 .problematics > div {
-  margin: auto 0;
-  width: 100%;
   height: 57%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -713,6 +711,7 @@ p {
 
 .description > li {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .problematics > div > hr {
@@ -807,6 +806,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:first-child > p {
+  font-size: 1rem;
   transform: rotate(-45deg);
   align-self: center;
   text-align: center;
@@ -814,6 +814,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:nth-child(2) > p {
+  font-size: 1rem;
   transform: rotate(45deg);
   align-self: center;
   text-align: center;
@@ -821,6 +822,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:nth-child(3) > p {
+  font-size: 1rem;
   transform: rotate(45deg);
   align-self: center;
   text-align: center;
@@ -828,6 +830,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:last-child > p {
+  font-size: 1rem;
   transform: rotate(-45deg);
   align-self: center;
   text-align: center;
@@ -859,9 +862,18 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .fun {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fun > h2 {
+    align-self: start;
 }
 
 .containerFun {
+  width: 90vw;
   margin-top: 1.5rem;
   height: 90vh;
   display: flex;
@@ -870,7 +882,6 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .teamName {
-  margin: 0.5rem;
   height: 40%;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -880,10 +891,15 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   border: 1px solid black;
   box-shadow: black 0px 3px 8px;
   border-radius: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 
 .teamName > p:first-child {
+  text-align: center;
+  font-size: 1.3rem;
   box-shadow: black 3px 3px 8px;
   border-radius: 30px 10px;
   grid-column: 5 / span 5;
@@ -891,23 +907,68 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 .teamName > p:nth-child(2) {
   grid-column: 11 / span 3;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 1;
 }
+
+.teamName > p:nth-child(2):hover {
+  grid-row: 1 / span 2;
+  border: #b08968 0.1em solid;
+  box-shadow: -0.3em -0.3em 2em #7f5539;
+  transition: transform 1s;
+  transform: scale(1.4);
+  filter: none;
+}
+
 .teamName > p:nth-child(3) {
   grid-column: 1 / span 5;
   grid-row: 1 / span 1;
 }
+
+.teamName > p:nth-child(3):hover {
+  text-decoration: line-through;
+  background-color: #7b7a7c;
+  transition: transform 1s;
+  transform: scale(1);
+  filter: none;
+}
+
 .teamName > p:nth-child(4) {
   grid-column: 1 / span 3;
   grid-row: 5 / span 1;
 }
+
+.teamName > p:nth-child(4):hover {
+  text-decoration: line-through;
+  background-color: #7b7a7c;
+  transition: transform 1s;
+  transform: scale(1);
+  filter: none;
+}
+
 .teamName > p:nth-child(5) {
   grid-column: 6 / span 3;
   grid-row: 7 / span 1;
 }
+
+.teamName > p:nth-child(5):hover {
+  text-decoration: line-through;
+  background-color: #7b7a7c;
+  transition: transform 1s;
+  transform: scale(1);
+  filter: none;
+}
+
 .teamName > p:last-child {
   grid-column: 11 / span 3;
   grid-row: 6 / span 1;
+}
+
+.teamName > p:last-child:hover {
+  text-decoration: line-through;
+  background-color: #7b7a7c;
+  transition: transform 1s;
+  transform: scale(1);
+  filter: none;
 }
 
 .containerFun > h3 {
@@ -921,16 +982,23 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 .kahoot {
   display: flex;
-  margin: 0.5rem;
   height: 45%;
-  margin: 0.5rem;
 }
 
 .survey {
-  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.week1 > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.week2 > img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .week1 {
@@ -941,27 +1009,25 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week1 > p:first-child {
+  font-size: 1.5rem;
   margin: auto;
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
 }
 .week1 > img:nth-child(2) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 .week1 > img:nth-child(3) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 .week1 > img:nth-child(4) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
 }
 
 .ranking {
@@ -970,6 +1036,12 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+
+.ranking > li {
+ align-items: center;
+ justify-content: center;
+ width: 3rem;
 }
 
 .ranking > li:first-child {
@@ -993,10 +1065,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .ranking > li > p {
-  transform: rotate(-90deg);
-  text-align: center;
-  align-self: center;
-  flex-grow: 1;
+ transform: rotate(-90deg);
 }
 
 .week2 {
@@ -1007,27 +1076,25 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week2 > p:first-child {
+  font-size: 1.5rem;
   margin: auto;
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
 }
 .week2 > img:nth-child(2) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 .week2 > img:nth-child(3) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 .week2 > img:nth-child(4) {
-  border: 1px solid black;
-  margin: 0.4rem;
+  margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
 }
 
 /* Section footer */
