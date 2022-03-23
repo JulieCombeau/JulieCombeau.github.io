@@ -730,29 +730,32 @@ p {
 /* Section problematics */
 
 .problematics {
+  border: 2px solid red;
   margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 90%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
 }
-.problematics h2 {
-  max-width: 90vw;
+.problematics > h2 {
+  max-width: 90%;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .problematics > p {
-  text-align: center;
-  max-width: 80vw;
+  max-width: 80%;
   margin: auto 0;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
-.problematics > div {
-  height: 57%;
+.problems {
+  margin: auto;
+  width: 330px;
+  height: 330px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -774,7 +777,7 @@ p {
   font-size: 0.8rem;
 }
 
-.problematics > div > hr {
+.problems > hr {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -897,22 +900,22 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   flex-grow: 1;
 }
 
-.problematics > div > ul:first-child {
+.problems > ul:first-child {
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
 }
 
-.problematics > div > ul:nth-child(2) {
+.problems > ul:nth-child(2) {
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
 }
 
-.problematics > div > ul:nth-child(3) {
+.problems > ul:nth-child(3) {
   grid-column: 1 / span 3;
   grid-row: 7 / span 2;
 }
 
-.problematics > div > ul:nth-child(4) {
+.problems > ul:nth-child(4) {
   grid-column: 6 / span 3;
   grid-row: 7 / span 2;
 }
