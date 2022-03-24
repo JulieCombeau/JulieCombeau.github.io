@@ -28,13 +28,6 @@ window.addEventListener("scroll", () => {
   }
 });
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 1500) {
-    metho.classList.add("scrollX");
-  } else {
-    metho.classList.remove("scrollX");
-  }
-});
-window.addEventListener("scroll", () => {
   if (window.scrollY > 2500) {
     prob.classList.add("scrollX");
   } else {
@@ -49,7 +42,7 @@ window.addEventListener("scroll", () => {
   }
 });
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 3000) {
+  if (window.scrollY > 2500) {
     foot.classList.add("scrollX");
   } else {
     foot.classList.remove("scrollX");

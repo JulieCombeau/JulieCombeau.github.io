@@ -609,42 +609,41 @@ p.circleMembers:first-letter {
 /* Section methodology */
 
 .methodology {
-  margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 100%;
+  max-height: 95vh;
   display: flex;
   flex-direction: column;
   opacity: 0;
 }
 
-.section-title {
-  align-self: center;
+.section-name {
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+  font-size: 130%;
+  color: #7f5539;
+  margin: 2rem 0;
 }
 
 .scrum-title {
-  font-family: "Playfair Display SC", serif;
-  height: 25px;
-  color: #7f5539;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .wild-title {
-  margin-bottom: 100px;
-  font-family: "Playfair Display SC", serif;
-  height: 50px;
-  color: #7f5539;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .methodology-intro {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid black;
-  margin: auto;
-  min-height: 10%;
-  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  padding-right: 5%;
 }
 
 .methodology-intro p {
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: 700;
   flex-wrap: wrap;
   justify-content: center;
@@ -654,81 +653,126 @@ p.circleMembers:first-letter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding-top: 50px; */
+  width: 98vw;
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.methods-blocks p {
+  display: flex;
+  margin: 0.2rem 0.4rem 0.3rem 0.6rem;
 }
 
 .scrum-method {
   display: flex;
   flex-direction: column;
-  border: solid black;
-  height: 70vh;
-  max-width: 40vw;
+  min-height: 60%;
+  width: 50%;
   justify-content: center;
   text-align: center;
 }
 .wild-method {
   display: flex;
   flex-direction: column;
-  border: solid black;
-  height: 70vh;
-  max-width: 40vw;
+  min-height: 60%;
+  width: 50%;
   justify-content: center;
   text-align: center;
 }
 .scrum-items {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* overflow: hidden; */
-  flex-wrap: wrap;
-  max-width: 40%;
+  width: 100%;
+  height: 100%;
+}
+.scrum-items p {
+  overflow-wrap: break-word;
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
 }
 
 .firstavoir {
-  font-size: 11.2px;
+  font-size: 0.7rem;
   flex-wrap: wrap;
-  height: 25vw;
-  width: 25vh;
-
-  background-size: cover;
-  justify-content: space-between;
-  margin-bottom: 48px;
-  background-color: #524a4f;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
 }
 
 .secondavoir {
+  font-size: 0.7rem;
   flex-wrap: wrap;
-  height: 25vw;
-  width: 25vh;
-  font-size: 11.2px;
-  background-size: cover;
-  background-color: #524a4f;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
 }
 
 .wild-items {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* overflow: hidden; */
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.wild-items p {
+  overflow-wrap: break-word;
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
 }
 
 .daily {
-  height: 25vh;
-  max-width: 25vw;
-  margin-bottom: 48px;
-  background-color: #524a4f;
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
 }
 
 .retro {
-  height: 25vh;
-  max-width: 25vw;
-  background-color: #524a4f;
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 640px) {
+.sprint-review {
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
+}
+.project-plan {
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
+}
+
+/* @media screen and (min-width: 375px) and (max-width: 640px) {
   .section-title {
-    /* margin: auto; */
     font-size: 30px;
     margin-bottom: 10px;
   }
@@ -788,18 +832,7 @@ p.circleMembers:first-letter {
     margin: 1rem;
   }
 
-  .wild-items p {
-    overflow: hidden;
-    overflow-wrap: break-word;
-    width: 100%;
-    padding-top: 5px;
-    font-size: 11.2px;
-    color: white;
-    text-shadow: 1px 1px 4px black;
-    font-weight: 500;
-  }
   .scrum-items p {
-    /* overflow: hidden; */
     overflow-wrap: break-word;
     width: 100%;
     padding-top: 5px;
@@ -851,7 +884,7 @@ p.circleMembers:first-letter {
     text-shadow: 1px 1px 4px black;
     font-weight: 500;
   }
-}
+} */
 
 /* Section problematics */
 
