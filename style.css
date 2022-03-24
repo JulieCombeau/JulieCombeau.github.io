@@ -739,7 +739,7 @@ p.circleMembers:first-letter {
 }
 
 .methods-blocks {
-  width: 98vw;
+  width: 98%;
   display: flex;
   flex-direction: row;
   border-radius: 5px;
@@ -805,9 +805,39 @@ p.circleMembers:first-letter {
   }
   .scrum-items p {
     height: 10vh;
+    width: 90%;
   }
   .wild-items p {
     height: 10vh;
+  }
+  .scrum-items {
+    width: 100%;
+    gap: 1rem;
+  }
+  .wild-items {
+    width: 100%;
+    gap: 1rem;
+  }
+  .scrum-title {
+    width: 90%;
+    padding-bottom: 2%;
+  }
+  .wild-title {
+    width: 90%;
+    padding-bottom: 2%;
+  }
+  .methodology-intro {
+    padding: 0%;
+    justify-content: center;
+  }
+  .wild-method {
+    width: 90%;
+    /* align-items: center; */
+  }
+  .scrum-method {
+    width: 90%;
+  }
+  .methods-blocks {
   }
 }
 
