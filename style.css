@@ -973,7 +973,6 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .containerFun {
-  max-width: 90%;
   margin: auto;
   height: 90%;
   display: flex;
