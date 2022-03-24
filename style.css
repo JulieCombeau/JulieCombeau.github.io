@@ -771,6 +771,18 @@ p.circleMembers:first-letter {
   border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .methods-blocks {
+    flex-direction: column;
+  }
+  .scrum-items p {
+    height: 10vh;
+  }
+  .wild-items p {
+    height: 10vh;
+  }
+}
+
 /* @media screen and (min-width: 375px) and (max-width: 640px) {
   .section-title {
     font-size: 30px;
