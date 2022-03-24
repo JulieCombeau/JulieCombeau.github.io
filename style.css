@@ -26,7 +26,6 @@ body {
     width: 45vw;
   }
   .organisation h2 {
-    color: red;
     width: 20%;
   }
   .methodology {
@@ -65,6 +64,7 @@ h2 {
   margin-left: 3vw;
   font-family: "Playfair Display SC", serif;
   font-size: 3vw;
+
 }
 
 /* navigation  */
@@ -414,7 +414,6 @@ p.circleMembers:first-letter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: red;
 }
 
 /* Grid display page "Organisation" */
@@ -426,8 +425,6 @@ p.circleMembers:first-letter {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  background-color: yellow;
-
 }
 
 .organisation-container > article {
@@ -437,37 +434,39 @@ p.circleMembers:first-letter {
 .organisation-block1 {
   grid-column: 1 / 4;
   margin: 4px 4px 0px 4px;
-  border: 2px solid black;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .organisation-block2 {
   grid-column: 1 / 4;
   margin: 0px 4px 0px 4px;
-  border: 2px solid black;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .organisation-block3 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
   grid-column: 4 / 5;
   grid-row: 1 / 3;
-  border: 2px solid black;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .organisation-block4 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* align-items: space-around; */
+  justify-content: space-evenly;
   grid-column: 1 / 5;
-  border: 2px solid black;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .organisation-block5 {
@@ -480,36 +479,64 @@ p.circleMembers:first-letter {
 
 .organisation-block6 {
   grid-column: 3 / 5;
-  border: 2px solid black;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 /* picture's dimensions */
 
-.organisation-block3 > img {
-  width: 100%;
-  height: 50%;
-  margin: auto;
+.rocket {
+  width: 8em;
+  height: auto;
+  margin: 1em 0;
   filter: grayscale(50%);
 }
+
+.img-lessons {
+  width: 5em;
+  height: auto;
+  margin-top: 4em;
+  margin-left: 2em;
+  filter: white(50%);
+}
+
+@media screen and (min-width: 768px) {
+  .img-lessons {
+    height: auto;
+    width: 6em;
+    margin: auto;
+    filter: grayscale(100%);
+  }
+  }
 
 .organisation-block5 > img {
-  height: 80%;
-  width: 80%;
+  height: auto;
+  width: 8em;
   margin: auto;
   filter: grayscale(50%);
 }
 
+@media screen and (min-width: 768px) {
+  .organisation-block5 > img {
+    height: auto;
+    width: 15em;
+    margin: auto;
+    filter: grayscale(50%);
+  }
+  }
 /* font */
 
 .organisation p {
   font-size: 0.7rem;
   line-height: 1.5;
 }
+span {
+  font-weight: bold;
+}
 
 @media screen and (min-width: 768px) {
-  p {
+  .organisation p {
     font-size: 1rem;
     /* line-height: 1.2rem */
     }
@@ -520,6 +547,7 @@ p.circleMembers:first-letter {
 .organisation-container article h3 {
   margin: 0.3rem 0.2rem;
   font-family: "Playfair Display SC", serif;
+  font-size: 130%;
   color: #7f5539;
 }
 
@@ -532,7 +560,42 @@ p.circleMembers:first-letter {
 .organisation h2 {
   max-width: 90vw;
   align-self: flex-start;
+  font-size : 3vw;
   margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+p.quests:first-letter {
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+  font-family: "Playfair Display SC", serif;
+  margin-right: 0.2em;
+}
+p.lessons:first-letter {
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+  font-family: "Playfair Display SC", serif;
+  margin-right: 0.2em;
+}
+p.workshops:first-letter {
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+  font-family: "Playfair Display SC", serif;
+  margin-right: 0.2em;
+}
+p.projects:first-letter {
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+  font-family: "Playfair Display SC", serif;
+  margin-right: 0.2em;
 }
 
 /* Section methodology */
