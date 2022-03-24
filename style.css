@@ -484,8 +484,8 @@ p {
 /* Section methodology */
 
 .methodology {
-  max-width: 90%;
-  max-height: 95%;
+  max-width: 100%;
+  max-height: 95;
   display: flex;
   flex-direction: column;
 }
