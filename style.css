@@ -784,7 +784,6 @@ p.circleMembers:first-letter {
 /* Section problematics */
 
 .problematics {
-  border: 2px solid red;
   margin: 0 auto;
   max-width: 90%;
   height: 90vh;
@@ -800,16 +799,15 @@ p.circleMembers:first-letter {
 }
 
 .problematics > p {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto 0;
   line-height: 1.5;
   font-size: 1rem;
 }
 
 .problems {
-  margin: auto;
-  width: 330px;
-  height: 330px;
+  margin-bottom: auto;
+  min-height: 55%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -923,6 +921,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:first-child > p {
+  
   font-size: 1rem;
   transform: rotate(-45deg);
   align-self: center;
@@ -931,6 +930,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:nth-child(2) > p {
+ 
   font-size: 1rem;
   transform: rotate(45deg);
   align-self: center;
@@ -977,9 +977,9 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 /* Section fun */
 
 .fun {
-  max-width: 90vw;
+  max-width: 90%;
   margin: 0 auto;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -987,21 +987,21 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .fun h2 {
-  max-width: 90vw;
+  max-width: 90%;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .containerFun {
-  max-width: 90vw;
-  margin-top: 1.5rem;
-  height: 80vh;
+  margin: auto;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .teamName {
+  margin: auto 0.5rem;
   height: 40%;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -1102,13 +1102,15 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 .kahoot {
   display: flex;
+  margin: auto 0.5rem;
   height: 45%;
 }
 
 .survey {
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .week1 > img {
@@ -1122,7 +1124,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week1 {
-  max-width: 45vw;
+  max-width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1137,7 +1139,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week1 > img:nth-child(2) {
   margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
 }
 .week1 > img:nth-child(3) {
   margin: 0.3rem;
@@ -1147,21 +1149,21 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week1 > img:nth-child(4) {
   margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .ranking {
   grid-column: 1 / span 3;
-  grid-row: 3 / span 4;
+  grid-row: 1 / span 6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .ranking > li {
   align-items: center;
   justify-content: center;
-  width: 3rem;
+  width: 2.75rem;
 }
 
 .ranking > li:first-child {
@@ -1169,19 +1171,19 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   border: 1px solid black;
   display: flex;
   grid-column: 1 / span 1;
-  grid-row: 2 / span 2;
+  grid-row: 5 / span 2;
 }
 .ranking > li:nth-child(2) {
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
-  grid-row: 1 / span 3;
+  grid-row: 3 / span 4;
 }
 .ranking > li:last-child {
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
-  grid-row: 3 / span 1;
+  grid-row: 6 / span 1;
 }
 
 .ranking > li > p {
@@ -1189,7 +1191,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week2 {
-  max-width: 45vw;
+  max-width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1204,7 +1206,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week2 > img:nth-child(2) {
   margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
 }
 .week2 > img:nth-child(3) {
   margin: 0.3rem;
@@ -1214,7 +1216,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week2 > img:nth-child(4) {
   margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 /* Section footer */
