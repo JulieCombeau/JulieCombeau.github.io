@@ -20,7 +20,6 @@ body {
     flex-direction: row;
     width: 100vw;
     justify-content: space-around;
-  
   }
   .organisation-container {
     width: 45vw;
@@ -293,12 +292,14 @@ section.presentation > h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .card, .card:hover {
+  .card,
+  .card:hover {
     width: 120%;
     height: 8rem;
     margin: 1em;
   }
-  img.avatar, img.karma-members {
+  img.avatar,
+  img.karma-members {
     width: 4.5em;
     height: auto;
   }
@@ -306,9 +307,11 @@ section.presentation > h3 {
     margin: 1em 5% 0 5%;
   }
   section.presentation > h3 {
-  margin: .5em 0 .5em 10px; 
+    margin: 0.5em 0 0.5em 10px;
   }
-  p.trainersWho, p.karmaWho, p.circleMembers {
+  p.trainersWho,
+  p.karmaWho,
+  p.circleMembers {
     font-size: 100%;
   }
   p.circleMembers {
@@ -378,7 +381,7 @@ li.allCrew:nth-child(2) {
 
 img.circleEmoji {
   width: 1.6em;
-  margin-top: .25em;
+  margin-top: 0.25em;
 }
 
 .karma-members {
@@ -427,7 +430,6 @@ p.circleMembers:first-letter {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   background-color: yellow;
-
 }
 
 .organisation-container > article {
@@ -512,8 +514,8 @@ p.circleMembers:first-letter {
   p {
     font-size: 1rem;
     /* line-height: 1.2rem */
-    }
   }
+}
 
 /* text display */
 
@@ -543,7 +545,6 @@ p.circleMembers:first-letter {
   display: flex;
   flex-direction: column;
 }
-
 
 .section-title {
   font-size: 30px;
@@ -585,14 +586,12 @@ p.circleMembers:first-letter {
 }
 
 .wild-title {
- 
   font-size: 20px;
   font-weight: 700;
 }
 .scrum-title {
   font-size: 20px;
   font-weight: 700;
-  
 }
 
 .wild-items {
@@ -600,7 +599,6 @@ p.circleMembers:first-letter {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  
 }
 .scrum-items {
   display: flex;
@@ -613,7 +611,7 @@ p.circleMembers:first-letter {
   overflow-wrap: break-word;
   font-size: 0.7rem;
   font-weight: 500;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -624,7 +622,6 @@ p.circleMembers:first-letter {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 .firstavoir {
   font-size: 0.7rem;
@@ -654,7 +651,6 @@ p.circleMembers:first-letter {
   border: 2px solid black;
   box-shadow: black 0px 3px 8px;
   border-radius: 5px;
- 
 }
 
 .wild-method {
@@ -714,7 +710,6 @@ p.circleMembers:first-letter {
   border-radius: 5px;
 }
 
-
 .retro {
   font-size: 0.7rem;
   flex-wrap: wrap;
@@ -725,7 +720,7 @@ p.circleMembers:first-letter {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
 
   .methodology {
     max-width: 90%;
@@ -912,10 +907,9 @@ p.circleMembers:first-letter {
     border: 2px solid black;
     box-shadow: black 0px 3px 8px;
     border-radius: 5px;
-  }
+  } */
 
-
-  /* Section problematics */
+/* Section problematics */
 
 .problematics {
   margin: 0 auto;
@@ -966,7 +960,8 @@ p.circleMembers:first-letter {
 .problems > hr {
   margin: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
+}
 
 #border1 {
   height: 100%;
@@ -1054,7 +1049,6 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:first-child > p {
-  
   font-size: 1rem;
   transform: rotate(-45deg);
   align-self: center;
@@ -1063,7 +1057,6 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:nth-child(2) > p {
- 
   font-size: 1rem;
   transform: rotate(45deg);
   align-self: center;
