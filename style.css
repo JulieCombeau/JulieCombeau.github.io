@@ -155,7 +155,7 @@ h2 {
   left: 85%;
   transform: translate(-50%, -50%);
   position: fixed;
-  width: 10%;
+  width: 50px;
   z-index: 1000;
 }
 
