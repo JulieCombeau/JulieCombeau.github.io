@@ -653,7 +653,7 @@ p.circleMembers:first-letter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 98vw;
+  width: 90%;
   border-radius: 5px;
   margin-top: 24px;
 }
