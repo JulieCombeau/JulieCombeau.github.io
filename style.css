@@ -783,10 +783,15 @@ p.circleMembers:first-letter {
 
 /* Section problematics */
 
+.problematics li,
+.problematics p {
+  font-family: "Antic Slab", serif;
+}
+
 .problematics {
   margin: 0 auto;
   max-width: 90%;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -802,15 +807,35 @@ p.circleMembers:first-letter {
   max-width: 90%;
   margin: auto 0;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+
+.problematics > p:first-letter {
+  display: block;
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+  font-family: "Playfair Display SC", serif;
+  margin-right: 0.2em;
 }
 
 .problems {
   margin-bottom: auto;
-  min-height: 55%;
+  width: 340px;
+  height: 340px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+  .problems{
+    width: 480px;
+    height: 480px;
+  }
+  .problematics > p {
+    font-size: 1.2rem;
+  }
 }
 
 .description {
@@ -826,7 +851,13 @@ p.circleMembers:first-letter {
 
 .description > li {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .description > li {
+    font-size: 1rem;
+  }
 }
 
 .problems > hr {
@@ -888,7 +919,7 @@ p.circleMembers:first-letter {
   border: 2px solid black;
   box-shadow: black 0px 3px 8px;
   border-radius: 100%;
-  background-color: rgb(230, 204, 178);
+  background-color: #e6ccb2;
 }
 
 .items > li {
@@ -979,11 +1010,16 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .fun {
   max-width: 90%;
   margin: 0 auto;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.fun li,
+.fun p {
+  font-family: "Antic Slab", serif;
 }
 
 .fun h2 {
@@ -994,7 +1030,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 .containerFun {
   margin: auto;
-  height: 90%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1014,7 +1050,13 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .teamName > p {
+    font-size: 1.2rem;
+  }
 }
 
 .teamName > p:first-child {
@@ -1093,6 +1135,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 .containerFun > h3 {
   border: 1px solid black;
+  font-family: "Playfair Display SC", serif;
   color: #7f5539;
   text-align: center;
   margin: auto 1rem;
@@ -1124,7 +1167,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week1 {
-  max-width: 45%;
+  width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1166,6 +1209,12 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   width: 2.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .ranking > li {
+    width: 4rem;
+  }
+}
+
 .ranking > li:first-child {
   margin: 0.1rem;
   border: 1px solid black;
@@ -1191,7 +1240,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week2 {
-  max-width: 45%;
+  width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
