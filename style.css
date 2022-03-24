@@ -786,9 +786,8 @@ p {
 }
 
 .problems {
-  margin: auto;
-  width: 330px;
-  height: 330px;
+  margin-bottom: auto;
+  min-height: 55%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -902,6 +901,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:first-child > p {
+  
   font-size: 1rem;
   transform: rotate(-45deg);
   align-self: center;
@@ -910,6 +910,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .items > li:nth-child(2) > p {
+ 
   font-size: 1rem;
   transform: rotate(45deg);
   align-self: center;
