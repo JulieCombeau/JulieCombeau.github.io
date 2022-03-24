@@ -162,7 +162,7 @@ h2 {
   margin-left: 3rem;
   font-family: var(--main-h2-font);
   font-size: 2.5em;
-  color: red;
+  color: rgb(75, 72, 72);
 }
 
 /* navigation  */
@@ -247,6 +247,17 @@ h2 {
   position: fixed;
   width: 50px;
   z-index: 1000;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    left: 90%;
+  }
+  .burger:before,
+  .burger:after,
+  .burger > .bar {
+    background: red;
+  }
 }
 
 .burger:before,
@@ -401,7 +412,7 @@ section.presentation > h3 {
   p.trainersWho,
   p.karmaWho,
   p.circleMembers {
-    font-size: 100%;
+    font-size: 1rem;
   }
   p.circleMembers {
     padding-left: 5%;
