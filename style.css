@@ -296,8 +296,8 @@ h2 {
 .presentation {
   display: block;
   margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 90%;
+  height: 95%;
   opacity: 0;
 }
 
@@ -330,7 +330,6 @@ section.presentation > h3 {
   margin: 0 0.7em;
   display: flex;
   justify-content: space-around;
-  max-width: 90vw;
 }
 
 .card {
@@ -344,7 +343,7 @@ section.presentation > h3 {
   text-align: center;
   padding-top: 0.5em;
   margin: 0.2em;
-  filter: grayscale(100%);
+  filter: grayscale(75%);
 }
 
 .card:hover {
@@ -358,6 +357,41 @@ section.presentation > h3 {
 
 .card p {
   margin-top: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .card,
+  .card:hover {
+    width: 120%;
+    height: 8rem;
+    margin: 1em;
+  }
+  img.avatar,
+  img.karma-members {
+    width: 4.5em;
+    height: auto;
+  }
+  p.trainersWho {
+    margin: 1em 5% 0 5%;
+  }
+  section.presentation > h3 {
+    margin: 0.5em 0 0.5em 10px;
+  }
+  p.trainersWho,
+  p.karmaWho,
+  p.circleMembers {
+    font-size: 100%;
+  }
+  p.circleMembers {
+    padding-left: 5%;
+  }
+  ul.karma-members {
+    padding-top: 0;
+  }
+  li.allCrew:nth-child(2) {
+    padding: 0;
+    height: 4em;
+  }
 }
 
 .trainersWho {
@@ -413,13 +447,17 @@ li.allCrew:nth-child(2) {
   border-radius: 0.4em 0.4em 0 0;
 }
 
+img.circleEmoji {
+  width: 1.6em;
+  margin-top: 0.25em;
+}
+
 .karma-members {
   display: flex;
   justify-content: space-around;
   background-color: #e6ccb2;
   background-size: cover;
   height: 9.8em;
-  max-width: 100%;
   padding-top: 0.8em;
 }
 
@@ -443,22 +481,24 @@ p.circleMembers:first-letter {
 .organisation {
   margin: 0 auto;
   height: 100vh;
-  max-width: 90vw;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  background-color: red;
   opacity: 0;
 }
 
 /* Grid display page "Organisation" */
 
 .organisation-container {
-  margin: 2rem 0;
-  max-width: 90vw;
-  height: 80vh;
+  margin: 2rem 0.1rem;
+  max-width: 100%;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  background-color: yellow;
 }
 
 .organisation-container > article {
@@ -482,6 +522,7 @@ p.circleMembers:first-letter {
 }
 
 .organisation-block3 {
+  display: flex;
   grid-column: 4 / 5;
   grid-row: 1 / 3;
   border: 2px solid black;
@@ -490,6 +531,10 @@ p.circleMembers:first-letter {
 }
 
 .organisation-block4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: space-around; */
   grid-column: 1 / 5;
   border: 2px solid black;
   box-shadow: black 0px 3px 8px;
@@ -497,14 +542,15 @@ p.circleMembers:first-letter {
 }
 
 .organisation-block5 {
-  grid-column: 1 / 4;
-  border: 2px solid black;
+  display: flex;
+  grid-column: 1 / 3;
+  /* border: 2px solid black;
   box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .organisation-block6 {
-  grid-column: 4 / 5;
+  grid-column: 3 / 5;
   border: 2px solid black;
   box-shadow: black 0px 3px 8px;
   border-radius: 5px;
@@ -513,22 +559,31 @@ p.circleMembers:first-letter {
 /* picture's dimensions */
 
 .organisation-block3 > img {
-  display: block;
-  width: 55vw;
-  margin-top: 8vh;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  filter: grayscale(50%);
 }
 
 .organisation-block5 > img {
-  display: block;
-  height: 25vh;
-  width: 35vw;
+  height: 80%;
+  width: 80%;
   margin: auto;
+  filter: grayscale(50%);
 }
 
 /* font */
 
-p {
+.organisation p {
   font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+    /* line-height: 1.2rem */
+  }
 }
 
 /* text display */
@@ -541,7 +596,8 @@ p {
 
 .organisation-container article p {
   margin: 0.2rem 0.4rem 0.3rem 0.6rem;
-  text-align: justify;
+  max-width: 100%;
+  /* text-align: justify; */
 }
 
 .organisation h2 {
@@ -802,28 +858,30 @@ p {
 .problematics {
   display: flex;
   margin: 0 auto;
-  max-width: 90vw;
-  height: 100vh;
+  max-width: 90%;
+  height: 90vh;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
   opacity: 0;
 }
-.problematics h2 {
-  max-width: 90vw;
+.problematics > h2 {
+  max-width: 90%;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .problematics > p {
-  text-align: center;
-  max-width: 80vw;
+  max-width: 90%;
   margin: auto 0;
   line-height: 1.5;
   font-size: 1rem;
 }
 
-.problematics > div {
-  height: 57%;
+.problems {
+  margin-bottom: auto;
+  min-height: 55%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -845,7 +903,7 @@ p {
   font-size: 0.8rem;
 }
 
-.problematics > div > hr {
+.problems > hr {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -968,22 +1026,22 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   flex-grow: 1;
 }
 
-.problematics > div > ul:first-child {
+.problems > ul:first-child {
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
 }
 
-.problematics > div > ul:nth-child(2) {
+.problems > ul:nth-child(2) {
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
 }
 
-.problematics > div > ul:nth-child(3) {
+.problems > ul:nth-child(3) {
   grid-column: 1 / span 3;
   grid-row: 7 / span 2;
 }
 
-.problematics > div > ul:nth-child(4) {
+.problems > ul:nth-child(4) {
   grid-column: 6 / span 3;
   grid-row: 7 / span 2;
 }
@@ -991,9 +1049,10 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 /* Section fun */
 
 .fun {
-  max-width: 90vw;
+  max-width: 90%;
   margin: 0 auto;
-  height: 100vh;
+  height: 90vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1001,21 +1060,21 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .fun h2 {
-  max-width: 90vw;
+  max-width: 90%;
   align-self: flex-start;
   margin-left: 3rem;
 }
 
 .containerFun {
-  max-width: 90vw;
-  margin-top: 1.5rem;
-  height: 80vh;
+  margin: auto;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .teamName {
+  margin: auto 0.5rem;
   height: 40%;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -1116,13 +1175,15 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 .kahoot {
   display: flex;
+  margin: auto 0.5rem;
   height: 45%;
 }
 
 .survey {
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .week1 > img {
@@ -1136,7 +1197,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week1 {
-  max-width: 45vw;
+  max-width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1151,7 +1212,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week1 > img:nth-child(2) {
   margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
 }
 .week1 > img:nth-child(3) {
   margin: 0.3rem;
@@ -1161,21 +1222,21 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week1 > img:nth-child(4) {
   margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .ranking {
   grid-column: 1 / span 3;
-  grid-row: 3 / span 4;
+  grid-row: 1 / span 6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .ranking > li {
   align-items: center;
   justify-content: center;
-  width: 3rem;
+  width: 2.75rem;
 }
 
 .ranking > li:first-child {
@@ -1183,19 +1244,19 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   border: 1px solid black;
   display: flex;
   grid-column: 1 / span 1;
-  grid-row: 2 / span 2;
+  grid-row: 5 / span 2;
 }
 .ranking > li:nth-child(2) {
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
-  grid-row: 1 / span 3;
+  grid-row: 3 / span 4;
 }
 .ranking > li:last-child {
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
-  grid-row: 3 / span 1;
+  grid-row: 6 / span 1;
 }
 
 .ranking > li > p {
@@ -1203,7 +1264,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week2 {
-  max-width: 45vw;
+  max-width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -1218,7 +1279,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week2 > img:nth-child(2) {
   margin: 0.3rem;
   grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
 }
 .week2 > img:nth-child(3) {
   margin: 0.3rem;
@@ -1228,7 +1289,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 .week2 > img:nth-child(4) {
   margin: 0.3rem;
   grid-column: 3 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 /* Section footer */
