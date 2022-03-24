@@ -788,6 +788,11 @@ p.circleMembers:first-letter {
   font-family: "Antic Slab", serif;
 }
 
+.problematics span {
+  color : rgb(176, 137, 104);
+  font-weight: bold;
+}
+
 .problematics {
   margin: 0 auto;
   max-width: 90%;
@@ -839,6 +844,7 @@ p.circleMembers:first-letter {
 }
 
 .description {
+  background-color: rgb(230, 204, 178, 0.6);
   display: flex;
   margin: 0.5rem;
   flex-direction: column;
@@ -937,13 +943,19 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   border-right: 1px solid black;
 }
 .items > li:nth-child(2) {
+  border-top-right-radius: 100%;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
+  background-color: rgb(176, 137, 104, 0.9);
+  opacity: 0.9;
 }
 
 .items > li:nth-child(3) {
+  border-bottom-left-radius: 100%;
   border-top: 1px solid black;
   border-right: 1px solid black;
+  background-color: rgb(176, 137, 104, 0.9);
+  opacity: 0.9;
 }
 
 .items > li:last-child {
@@ -1036,6 +1048,12 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   justify-content: space-evenly;
 }
 
+/* @media screen and (min-width: 768px) {
+  .containerFun {
+   border-left: 2px solid black;
+  }
+} */
+
 .teamName {
   margin: auto 0.5rem;
   height: 40%;
@@ -1076,9 +1094,8 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   grid-row: 1 / span 2;
   border: #b08968 0.1em solid;
   box-shadow: -0.3em -0.3em 2em #7f5539;
-  transition: transform 1s;
-  transform: scale(1.2);
-  filter: none;
+  transition: transform 2s;
+  transform: scale(1);
 }
 
 .teamName > p:nth-child(3) {
@@ -1134,7 +1151,6 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .containerFun > h3 {
-  border: 1px solid black;
   font-family: "Playfair Display SC", serif;
   color: #7f5539;
   text-align: center;
@@ -1156,14 +1172,18 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   justify-content: space-around;
 }
 
-.week1 > img {
+.week1 > img,
+.week2 > img {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.week2 > img {
-  width: 2.5rem;
-  height: 2.5rem;
+@media screen and (min-width: 768px) {
+  .week1 > img,
+  .week2 > img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 }
 
 .week1 {
@@ -1174,6 +1194,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week1 > p:first-child {
+  border-bottom: 0.5px solid black;
   font-size: 1.5rem;
   margin: auto;
   grid-column: 1 / span 3;
@@ -1216,6 +1237,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .ranking > li:first-child {
+  background-color: rgb(230, 204, 178, 0.9);
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
@@ -1223,12 +1245,14 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   grid-row: 5 / span 2;
 }
 .ranking > li:nth-child(2) {
+  background-color: rgb(176, 137, 104, 0.6);
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
   grid-row: 3 / span 4;
 }
 .ranking > li:last-child {
+  background-color: rgb(230, 204, 178, 0.6);
   margin: 0.1rem;
   border: 1px solid black;
   display: flex;
@@ -1237,6 +1261,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 
 .ranking > li > p {
   transform: rotate(-90deg);
+  font-size: 0.8rem;
 }
 
 .week2 {
@@ -1247,6 +1272,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
 }
 
 .week2 > p:first-child {
+  border-bottom: 0.5px solid black;
   font-size: 1.5rem;
   margin: auto;
   grid-column: 1 / span 3;
