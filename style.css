@@ -708,11 +708,12 @@ p.projects:first-letter {
 .methodology-intro p {
   /* font-size: 48px; */
   font-weight: 700;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 24px;
+  width: 100vw;
+  text-align: center;
 }
 
-.methods-blocks {
+.wild-method {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -795,6 +796,33 @@ p.projects:first-letter {
   height: 20vh;
 }
 
+.wild-items p {
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.methods-blocks {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.methods-blocks p {
+  display: flex;
+  margin: 0.2rem 0.4rem 0.3rem 0.6rem;
+}
+.project-plan {
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
+}
+
 .daily {
   font-size: 0.7rem;
   flex-wrap: wrap;
@@ -840,9 +868,39 @@ p.projects:first-letter {
   }
   .scrum-items p {
     height: 10vh;
+    width: 90%;
   }
   .wild-items p {
     height: 10vh;
+  }
+  .scrum-items {
+    width: 100%;
+    gap: 1rem;
+  }
+  .wild-items {
+    width: 100%;
+    gap: 1rem;
+  }
+  .scrum-title {
+    width: 90%;
+    padding-bottom: 2%;
+  }
+  .wild-title {
+    width: 90%;
+    padding-bottom: 2%;
+  }
+  .methodology-intro {
+    padding: 0%;
+    justify-content: center;
+  }
+  .wild-method {
+    width: 90%;
+    /* align-items: center; */
+  }
+  .scrum-method {
+    width: 90%;
+  }
+  .methods-blocks {
   }
 }
 
@@ -851,113 +909,145 @@ p.projects:first-letter {
     font-size: 30px;
     margin-bottom: 10px;
   }
-
-  .methodology-intro {
-    font-size: 24px;
-    font-weight: 700;
-    flex-wrap: wrap;
-    margin-top: 24px;
-    width: 90vw;
+  
+  .section-name {
+    text-align: center;
+    font-family: "Playfair Display SC", serif;
+    font-size: 130%;
+    color: #7f5539;
   }
-
+  .methodology-intro {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    width: 100vw;
+    text-align: center;
+  }
+  
   .wild-method {
     display: flex;
     flex-direction: column;
-    border: solid black;
-    min-height: 60vh;
-    width: 40vw;
+    min-height: 60%;
+    width: 50%;
     justify-content: center;
     text-align: center;
-    margin: 1rem 0;
+    margin-right: 8px;
   }
+  
   .scrum-method {
     display: flex;
     flex-direction: column;
-    border: solid black;
-    min-height: 60vh;
-    width: 40vw;
+    min-height: 60%;
+    width: 50%;
     justify-content: center;
     text-align: center;
-    margin: 1rem 0;
   }
-
+  
   .wild-title {
-    margin: 0;
+   
     font-size: 20px;
     font-weight: 700;
   }
   .scrum-title {
-    margin: 0;
     font-size: 20px;
     font-weight: 700;
+    
   }
-
+  
   .wild-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 1rem;
+    width: 100%;
+    height: 100%;
+    
   }
   .scrum-items {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wild-items p {
+    overflow-wrap: break-word;
+    font-size: 11.2px;
+    font-weight: 500;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+=======
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 1rem;
   }
 
+>>>>>>> 18c09982625478520ad96af8d339990c098ec57b
   .scrum-items p {
     overflow-wrap: break-word;
-    width: 100%;
-    padding-top: 5px;
     font-size: 11.2px;
-    color: white;
-    text-shadow: 1px 1px 4px black;
     font-weight: 500;
-    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
   }
-
-  .methodology-intro p {
-    font-size: 24px;
-    font-weight: 700;
+  .firstavoir {
+    font-size: 11.2px;
     flex-wrap: wrap;
+    height: 30%;
+    max-width: 95%;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;
   }
-
+  
+  .secondavoir {
+    font-size: 11.2px;
+    flex-wrap: wrap;
+    height: 30%;
+    max-width: 95%;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;
+  }
+  
+  .sprint-review {
+    font-size: 11.2px;
+    flex-wrap: wrap;
+    height: 30%;
+    max-width: 95%;
+    border: 2px solid black;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 5px;
+   
+  }
+  
   .wild-method {
     display: flex;
     flex-direction: column;
-    border: solid black;
     min-height: 60vh;
-    width: 40vw;
+    width: 45%;
     justify-content: center;
     text-align: center;
-    margin: 1rem 0;
   }
-
+  
   .wild-title {
-    margin: 0;
     font-size: 20px;
     font-weight: 700;
   }
-
+  
   .wild-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 1rem;
   }
-
+  
   .wild-items p {
-    overflow: hidden;
-    overflow-wrap: break-word;
     width: 100%;
-    padding-top: 5px;
     font-size: 11.2px;
-    color: white;
-    text-shadow: 1px 1px 4px black;
-    font-weight: 500;
   }
 } */
 
