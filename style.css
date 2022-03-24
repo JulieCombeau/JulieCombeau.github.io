@@ -159,10 +159,16 @@ p {
 }
 
 h2 {
-  margin-left: 3rem;
+  margin-left: 1rem;
   font-family: var(--main-h2-font);
   font-size: 2.5em;
   color: rgb(75, 72, 72);
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-left: 3rem;
+  }
 }
 
 /* navigation  */
@@ -428,6 +434,7 @@ section.presentation > h3 {
 
 .trainersWho {
   margin: 5% 5% 0 5%;
+  font-size: 0.8rem;
 }
 
 p.trainersWho:first-letter {
@@ -441,6 +448,7 @@ p.trainersWho:first-letter {
 
 .karmaWho {
   margin: 0 5% 2% 5%;
+  font-size: 0.8rem;
 }
 
 p.karmaWho:first-letter {
@@ -463,8 +471,8 @@ p.karmaWho:first-letter {
 }
 
 .allCrew {
-  width: 6em;
-  height: 4em;
+  width: 5em;
+  height: 3em;
   text-align: center;
   background-color: #b08968;
   border-radius: 0.4em;
@@ -686,7 +694,7 @@ p.projects:first-letter {
 
 .methodology {
   max-width: 100%;
-  max-height: 95%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   opacity: 1;
@@ -714,6 +722,7 @@ p.projects:first-letter {
 }
 .methodology-intro {
   display: flex;
+
   font-size: 1rem;
   font-weight: 700;
   max-width: 100%;
@@ -726,8 +735,8 @@ p.projects:first-letter {
   min-width: 100%;
   text-align: center;
 }
-
 .wild-method {
+  margin-top: 19%;
   display: flex;
   flex-direction: column;
   min-height: 60%;
@@ -756,6 +765,7 @@ p.projects:first-letter {
   width: 50%;
   justify-content: center;
   text-align: center;
+  margin-top: 20%;
 }
 .scrum-items {
   display: flex;
@@ -913,6 +923,7 @@ p.projects:first-letter {
     margin: 1rem 2.5rem;
   }
   .wild-method {
+    margin-top: 0;
     width: 90%;
     height: 90%;
   }
