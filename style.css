@@ -680,6 +680,7 @@ p.projects:first-letter {
 }
 
 .section-name {
+  max-width: 85%;
   text-align: center;
   font-family: "Playfair Display SC", serif;
   font-size: 130%;
@@ -690,23 +691,23 @@ p.projects:first-letter {
 .scrum-title {
   font-size: 1rem;
   font-weight: 700;
+  min-width: 100%;
 }
 
 .wild-title {
   font-size: 1rem;
   font-weight: 700;
+  min-width: 100%;
 }
 .methodology-intro {
   display: flex;
   font-size: 1rem;
   font-weight: 700;
-  width: 100%;
+  max-width: 87%;
   text-align: center;
-  padding-right: 5%;
 }
 
 .methodology-intro p {
-  /* font-size: 48px; */
   font-weight: 700;
   margin-top: 24px;
   width: 100vw;
@@ -715,11 +716,11 @@ p.projects:first-letter {
 
 .wild-method {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-  border-radius: 5px;
-  margin-top: 24px;
+  flex-direction: column;
+  min-height: 60%;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
 }
 
 .methods-blocks p {
@@ -769,6 +770,15 @@ p.projects:first-letter {
 }
 
 .secondavoir {
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 95%;
+  border: 2px solid black;
+  box-shadow: black 0px 3px 8px;
+  border-radius: 5px;
+}
+.sprint-review {
   font-size: 0.7rem;
   flex-wrap: wrap;
   height: 30%;
@@ -852,15 +862,6 @@ p.projects:first-letter {
   box-shadow: black 0px 3px 8px;
   border-radius: 5px;
 }
-.project-plan {
-  font-size: 0.7rem;
-  flex-wrap: wrap;
-  height: 30%;
-  max-width: 95%;
-  border: 2px solid black;
-  box-shadow: black 0px 3px 8px;
-  border-radius: 5px;
-}
 
 @media screen and (min-width: 768px) {
   .methods-blocks {
@@ -868,10 +869,11 @@ p.projects:first-letter {
   }
   .scrum-items p {
     height: 10vh;
-    width: 90%;
+    width: 100%;
   }
   .wild-items p {
     height: 10vh;
+    width: 100%;
   }
   .scrum-items {
     width: 100%;
