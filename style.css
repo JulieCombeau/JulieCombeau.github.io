@@ -12,6 +12,75 @@ body {
   flex-direction: column;
 }
 
+/* Scrolling part */
+
+.presentation.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+/* .presentation.scrollY {
+  display: block;
+  transition: all 2s ease-in-out;
+  animation-name: hideSite;
+  animation-duration: 2s;
+  opacity: 0;
+} */
+.organisation.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.methodology.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.problematics.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.fun.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.footer.scrollX {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 4s;
+}
+/* .presentation.scrollY {
+  display: none;
+  transition: all 2s ease-in-out;
+  animation-name: hideSite;
+  animation-duration: 2s;
+} */
+
+@keyframes showSite {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hideSite {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /* Responsive grid for desktop */
 
 @media screen and (min-width: 768px) {
@@ -222,15 +291,14 @@ h2 {
     opacity: 1;
   }
 }
-
-/* Main 
-
 /* Section presentation */
 
 .presentation {
+  display: block;
   margin: 0 auto;
   max-width: 90vw;
   height: 100vh;
+  opacity: 0;
 }
 
 img.karma-members {
@@ -379,6 +447,7 @@ p.circleMembers:first-letter {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 
 /* Grid display page "Organisation" */
@@ -489,6 +558,7 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  opacity: 0;
 }
 
 .section-title {
@@ -730,12 +800,13 @@ p {
 /* Section problematics */
 
 .problematics {
+  display: flex;
   margin: 0 auto;
   max-width: 90vw;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 .problematics h2 {
   max-width: 90vw;
@@ -923,10 +994,10 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   max-width: 90vw;
   margin: 0 auto;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 
 .fun h2 {
@@ -1167,6 +1238,7 @@ box-shadow: 0.3em 0.3em 0.7em aqua;
   align-items: center;
   /* width: 100%; */
   height: 100vh;
+  opacity: 0;
 }
 
 .container-footer {
