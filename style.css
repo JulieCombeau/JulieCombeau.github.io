@@ -6,13 +6,11 @@
 }
 
 body {
-  width: calc (100vw - 0.5rem);
+  width: calc(100vw - 0.5rem);
   display: flex;
   flex-direction: column;
 }
-
 /* Scrolling part */
-
 .presentation.scrollX {
   transition: all 2s ease-in-out;
   animation-name: showSite;
@@ -59,7 +57,7 @@ body {
   }
 }
 
-.presentation-desk {
+/* .presentation-desk {
   transition: all 2s ease-in-out;
   animation-name: showSiteDesk;
   animation-duration: 2s;
@@ -103,7 +101,7 @@ body {
   to {
     opacity: 1;
   }
-}
+} */
 
 /* Responsive grid for desktop */
 
@@ -126,6 +124,7 @@ body {
   }
   .problematics {
     width: 45%;
+    opacity: 1;
   }
   /* .problematics h2 {
     color: red;
@@ -133,6 +132,7 @@ body {
   } */
   .fun {
     width: 45%;
+    opacity: 1;
   }
   .problematics > p {
     margin: 1rem 0;
@@ -215,15 +215,6 @@ h2 {
   justify-content: space-between;
   animation-name: showNav;
   animation-duration: 800ms;
-}
-
-@keyframes hideNav {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 @keyframes showNav {
@@ -405,8 +396,14 @@ section.presentation > h3 {
     height: auto;
   }
   p.trainersWho {
-    margin: 1em 5% 0 5%;
+    margin: 1em 10% 0 10%;
   }
+
+  p.karmaWho {
+    margin: 1em 10% 0 10%;
+    margin-bottom: 1rem;
+  }
+
   section.presentation > h3 {
     margin: 0.5em 0 0.5em 10px;
   }
@@ -414,9 +411,11 @@ section.presentation > h3 {
   p.karmaWho,
   p.circleMembers {
     font-size: 1rem;
+    padding-top: 1rem;
   }
+
   p.circleMembers {
-    padding-left: 5%;
+    padding-left: 10%;
   }
   ul.karma-members {
     padding-top: 0;
@@ -425,11 +424,22 @@ section.presentation > h3 {
     padding: 0;
     height: 4em;
   }
+  .presentation {
+    height: 100vh;
+    opacity: 1;
+  }
 }
 
 .trainersWho {
   margin: 5% 5% 0 5%;
   font-size: 0.8rem;
+}
+
+p.trainersWho {
+  font-size: 1rem;
+}
+p.karmaWho {
+  font-size: 1rem;
 }
 
 p.trainersWho:first-letter {
@@ -467,12 +477,12 @@ p.karmaWho:first-letter {
 
 .allCrew {
   width: 5em;
-  height: 3em;
+  height: 5em;
   text-align: center;
   background-color: #b08968;
   border-radius: 0.4em;
   margin-top: 0.5em;
-  padding-top: 0.8em;
+  padding-top: 0.4em;
 }
 
 li.allCrew:nth-child(2) {
@@ -521,6 +531,12 @@ p.circleMembers:first-letter {
   flex-direction: column;
   justify-content: space-around;
   opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .organisation {
+    opacity: 1;
+  }
 }
 
 /* Grid display page "Organisation" */
@@ -621,6 +637,7 @@ p.circleMembers:first-letter {
   line-height: 1.5;
 }
 span {
+  color: rgb(176, 137, 104);
   font-weight: bold;
 }
 
@@ -867,12 +884,13 @@ p.projects:first-letter {
 @media screen and (min-width: 768px) {
   .methodology {
     height: 95%;
+    opacity: 1;
   }
   .methods-blocks {
     margin-top: 2rem;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    /* height: 90vh; */
   }
   .scrum-items p {
     height: 10vh;
@@ -894,7 +912,7 @@ p.projects:first-letter {
     justify-content: center;
   }
   .scrum-title {
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     width: 90%;
     font-family: "Playfair Display SC", serif;
@@ -948,6 +966,9 @@ p.projects:first-letter {
   align-items: center;
   align-content: space-between;
   opacity: 0;
+}
+.problematics {
+  opacity: 1;
 }
 /* .problematics > h2 {
   max-width: 90%;
@@ -1168,6 +1189,10 @@ p.projects:first-letter {
   justify-content: center;
   align-items: center;
   opacity: 0;
+}
+
+.fun {
+  opacity: 1;
 }
 
 .fun li,
@@ -1484,6 +1509,7 @@ p.projects:first-letter {
   .footer {
     margin-top: 10vh;
     height: 40vh;
+    opacity: 1;
   }
   .footer-img {
     display: flex;
