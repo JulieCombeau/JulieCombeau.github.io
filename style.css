@@ -59,7 +59,7 @@ body {
   }
 }
 
-.presentation-desk {
+/* .presentation-desk {
   transition: all 2s ease-in-out;
   animation-name: showSiteDesk;
   animation-duration: 2s;
@@ -103,7 +103,7 @@ body {
   to {
     opacity: 1;
   }
-}
+} */
 
 /* Responsive grid for desktop */
 
@@ -126,6 +126,7 @@ body {
   }
   .problematics {
     width: 45%;
+    opacity: 1;
   }
   /* .problematics h2 {
     color: red;
@@ -133,6 +134,7 @@ body {
   } */
   .fun {
     width: 45%;
+    opacity: 1;
   }
   .problematics > p {
     margin: 1rem 0;
@@ -215,15 +217,6 @@ h2 {
   justify-content: space-between;
   animation-name: showNav;
   animation-duration: 800ms;
-}
-
-@keyframes hideNav {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 @keyframes showNav {
@@ -425,6 +418,9 @@ section.presentation > h3 {
     padding: 0;
     height: 4em;
   }
+  .presentation {
+    opacity: 1;
+  }
 }
 
 .trainersWho {
@@ -521,6 +517,12 @@ p.circleMembers:first-letter {
   flex-direction: column;
   justify-content: space-around;
   opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .organisation {
+    opacity: 1;
+  }
 }
 
 /* Grid display page "Organisation" */
@@ -867,6 +869,7 @@ p.projects:first-letter {
 @media screen and (min-width: 768px) {
   .methodology {
     height: 95%;
+    opacity: 1;
   }
   .methods-blocks {
     margin-top: 2rem;
@@ -948,6 +951,9 @@ p.projects:first-letter {
   align-items: center;
   align-content: space-between;
   opacity: 0;
+}
+.problematics {
+  opacity: 1;
 }
 /* .problematics > h2 {
   max-width: 90%;
@@ -1168,6 +1174,10 @@ p.projects:first-letter {
   justify-content: center;
   align-items: center;
   opacity: 0;
+}
+
+.fun {
+  opacity: 1;
 }
 
 .fun li,
@@ -1484,6 +1494,7 @@ p.projects:first-letter {
   .footer {
     margin-top: 10vh;
     height: 40vh;
+    opacity: 1;
   }
   .footer-img {
     display: flex;

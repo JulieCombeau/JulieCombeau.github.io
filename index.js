@@ -71,66 +71,66 @@ window.addEventListener("scroll", () => {
 
 // ------------------------------------------------------------
 
-window.addEventListener("scroll", () => {
-  if (
-    window.screen.width > 769 &&
-    window.scrollY > 200 &&
-    window.scrollY < 3000
-  ) {
-    pres.classList.add("presentation-desk");
-  } else {
-    pres.classList.remove("presentation-desk");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (
+//     window.screen.width > 769 &&
+//     window.scrollY > 500 &&
+//     window.scrollY < 3000
+//   ) {
+//     pres.classList.add("presentation-desk");
+//   } else {
+//     pres.classList.remove("presentation-desk");
+//   }
+// });
 
-window.addEventListener("scroll", () => {
-  if (
-    window.screen.width > 769 &&
-    window.scrollY > 1000 &&
-    window.scrollY < 7500
-  ) {
-    orga.classList.add("organisation-desk");
-  } else {
-    orga.classList.remove("organisation-desk");
-  }
-});
-window.addEventListener("scroll", () => {
-  if (
-    window.screen.width > 769 &&
-    window.scrollY > 1000 &&
-    window.scrollY < 7500
-  ) {
-    metho.classList.add("methodology-desk");
-  } else {
-    metho.classList.remove("methodology-desk");
-  }
-});
-window.addEventListener("scroll", () => {
-  if (
-    window.screen.width > 769 &&
-    window.scrollY > 1800 &&
-    window.scrollY < 10000
-  ) {
-    prob.classList.add("problematics-desk");
-  } else {
-    prob.classList.remove("problematics-desk");
-  }
-});
-window.addEventListener("scroll", () => {
-  if (
-    window.screen.width > 769 &&
-    window.scrollY > 1800 &&
-    window.scrollY < 10000
-  ) {
-    fun.classList.add("fun-desk");
-  } else {
-    fun.classList.remove("fun-desk");
-  }
-});
-window.addEventListener("scroll", () => {
-  if (window.screen.width > 769 && window.scrollY > 2000) {
-    foot.classList.add("footer-desk");
-  } else {
-    foot.classList.remove("footer-desk");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (
+//     window.screen.width > 769 &&
+//     window.scrollY > 1000 &&
+//     window.scrollY < 7500
+//   ) {
+//     orga.classList.add("organisation-desk");
+//   } else {
+//     orga.classList.remove("organisation-desk");
+//   }
+// });
+// window.addEventListener("scroll", () => {
+//   if (
+//     window.screen.width > 769 &&
+//     window.scrollY > 1000 &&
+//     window.scrollY < 7500
+//   ) {
+//     metho.classList.add("methodology-desk");
+//   } else {
+//     metho.classList.remove("methodology-desk");
+//   }
+// });
+// window.addEventListener("scroll", () => {
+//   if (
+//     window.screen.width > 769 &&
+//     window.scrollY > 1800 &&
+//     window.scrollY < 10000
+//   ) {
+//     prob.classList.add("problematics-desk");
+//   } else {
+//     prob.classList.remove("problematics-desk");
+//   }
+// });
+// window.addEventListener("scroll", () => {
+//   if (
+//     window.screen.width > 769 &&
+//     window.scrollY > 1800 &&
+//     window.scrollY < 10000
+//   ) {
+//     fun.classList.add("fun-desk");
+//   } else {
+//     fun.classList.remove("fun-desk");
+//   }
+// });
+// window.addEventListener("scroll", () => {
+//   if (window.screen.width > 769 && window.scrollY > 2000) {
+//     foot.classList.add("footer-desk");
+//   } else {
+//     foot.classList.remove("footer-desk");
+//   }
+// });
