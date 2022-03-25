@@ -13,93 +13,89 @@ body {
 
 /* Scrolling part */
 
-@media screen and (max-width: 768px) {
-  .presentation.scrollX {
-    transition: all 2s ease-in-out;
-    animation-name: showSite;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .organisation.scrollX {
-    transition: all 2s ease-in-out;
-    animation-name: showSite;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .methodology.scrollX {
-    transition: all 2s ease-in-out;
-    animation-name: showSite;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .problematics.scrollX {
-    transition: all 2s ease-in-out;
-    animation-name: showSite;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .fun.scrollX {
-    transition: all 2s ease-in-out;
-    animation-name: showSite;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .footer.scrollX {
-    opacity: 1;
-    transition: all 2s ease-in-out;
-    animation-name: showSite;
-    animation-duration: 4s;
-  }
+.presentation.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.organisation.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.methodology.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.problematics.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.fun.scrollX {
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.footer.scrollX {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+  animation-name: showSite;
+  animation-duration: 2s;
+}
 
-  @keyframes showSite {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+@keyframes showSite {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .presentation-desk {
-    transition: all 2s ease-in-out;
-    animation-name: showSiteDesk;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .organisation-desk {
-    transition: all 2s ease-in-out;
-    animation-name: showSiteDesk;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .methodology-desk {
-    transition: all 2s ease-in-out;
-    animation-name: showSiteDesk;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .problematics-desk {
-    transition: all 2s ease-in-out;
-    animation-name: showSiteDesk;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .fun-desk {
-    transition: all 2s ease-in-out;
-    animation-name: showSiteDesk;
-    animation-duration: 2s;
-    opacity: 1;
-  }
-  .footer-desk {
-    opacity: 1;
-    transition: all 2s ease-in-out;
-    animation-name: showSiteDesk;
-    animation-duration: 4s;
-  }
+.presentation-desk {
+  transition: all 2s ease-in-out;
+  animation-name: showSiteDesk;
+  animation-duration: 2s;
+  opacity: 1;
 }
+.organisation-desk {
+  transition: all 2s ease-in-out;
+  animation-name: showSiteDesk;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.methodology-desk {
+  transition: all 2s ease-in-out;
+  animation-name: showSiteDesk;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.problematics-desk {
+  transition: all 2s ease-in-out;
+  animation-name: showSiteDesk;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.fun-desk {
+  transition: all 2s ease-in-out;
+  animation-name: showSiteDesk;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.footer-desk {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+  animation-name: showSiteDesk;
+  animation-duration: 2s;
+}
+
 @keyframes showSiteDesk {
   from {
     opacity: 0;
@@ -335,7 +331,7 @@ h2 {
   margin: 0 auto;
   max-width: 90%;
   height: 95%;
-  opacity: 1;
+  opacity: 0;
 }
 
 img.karma-members {
@@ -524,7 +520,7 @@ p.circleMembers:first-letter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Grid display page "Organisation" */
@@ -697,7 +693,7 @@ p.projects:first-letter {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  opacity: 1;
+  opacity: 0;
   position: relative;
 }
 
@@ -951,7 +947,7 @@ p.projects:first-letter {
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  opacity: 1;
+  opacity: 0;
 }
 /* .problematics > h2 {
   max-width: 90%;
@@ -1171,7 +1167,7 @@ p.projects:first-letter {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  opacity: 0;
 }
 
 .fun li,
@@ -1440,7 +1436,7 @@ p.projects:first-letter {
   align-items: center;
   /* width: 100%; */
   height: 100vh;
-  opacity: 1;
+  opacity: 0;
 }
 
 .container-footer {
