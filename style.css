@@ -171,7 +171,7 @@ h2 {
 .navbar {
   position: fixed;
   display: none;
-  background-color: rgba(190, 190, 190, 0.918);
+  background-color: rgba(245, 245, 245, 0.973);
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -196,7 +196,7 @@ h2 {
 }
 .navbar__links > a {
   text-decoration: none;
-  background: linear-gradient(to left, #141818 0%, #ddb892 100%);
+  background: linear-gradient(to left, #141818 0%, #8b6d4f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -204,7 +204,7 @@ h2 {
 .navbar__links a:hover,
 .navbar__links a:focus {
   font-size: 3rem;
-  background: linear-gradient(to right, #141818 0%, #ddb892 100%);
+  background: linear-gradient(to right, #141818 0%, #8b6d4f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
